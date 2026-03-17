@@ -256,8 +256,11 @@ nav{
 .gallery-track{
   display:flex;gap:14px;margin-top:48px;
   overflow-x:auto;padding:0 40px 16px;
-  scrollbar-width:thin;scrollbar-color:var(--gold) transparent
+  scrollbar-width:thin;scrollbar-color:var(--gold) transparent;
+  animation:galleryScroll 40s linear infinite
 }
+.gallery-track:hover{animation-play-state:paused}
+@keyframes galleryScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 .gallery-track::-webkit-scrollbar{height:3px}
 .gallery-track::-webkit-scrollbar-thumb{background:var(--gold)}
 .gallery-item{
@@ -668,6 +671,11 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
 @media(max-width:768px){
   .container{padding:0 20px}
   .nav-links{display:none}
+  .nav-links.mobile-open{display:block !important;position:fixed;top:60px;left:0;width:100%;background:#000 !important;z-index:8999;max-height:calc(100vh - 60px);overflow-y:auto;padding-bottom:24px;border-bottom:1px solid rgba(245,166,35,0.25)}
+  .nav-links.mobile-open .nav-item{display:block !important;border-bottom:1px solid rgba(255,255,255,0.06)}
+  .nav-links.mobile-open .nav-item > a,.nav-links.mobile-open .nav-item > button.nav-btn{display:block !important;width:100%;text-align:left;padding:14px 20px !important;color:var(--lgray)}
+  .nav-links.mobile-open .dropdown{position:static !important;opacity:1 !important;pointer-events:auto !important;transform:none !important;box-shadow:none !important;background:rgba(245,166,35,0.05) !important;border-radius:0 !important;border:none !important;min-width:0}
+  .nav-links.mobile-open .dropdown a{padding:10px 32px !important;font-size:12px !important}
   .hero-content{grid-template-columns:1fr;text-align:center}
   .hero-right{order:-1}
   .hero-logo-wrap img{width:280px}
@@ -849,6 +857,20 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
       <div class="gallery-item"><img src="https://made2ordermerch.com/cdn/shop/files/Screenshot_2026-02-05_at_5.58.50_PM.png?v=1770332359&width=600" alt="Custom packaging print" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:8px"></div>
       <div class="gallery-item"><img src="https://made2ordermerch.com/cdn/shop/files/IMG_3915.jpg?v=1751500126&width=600" alt="Custom packaging print" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:8px"></div>
       <div class="gallery-item"><img src="https://made2ordermerch.com/cdn/shop/files/Screenshot_2026-02-18_at_8.00.18_PM.png?v=1771462838&width=600" alt="Custom packaging print" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:8px"></div>
+    
+      <div class="gallery-item"><img src="https://made2ordermerch.com/cdn/shop/files/Screenshot_2026-02-24_at_10.58.53_AM_1.png?v=1771948747&width=600" alt="Custom packaging print" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:8px"></div>
+      <div class="gallery-item"><img src="https://made2ordermerch.com/cdn/shop/files/Screenshot_2026-03-02_at_4.55.57_PM.png?v=1772488568&width=600" alt="Custom packaging print" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:8px"></div>
+      <div class="gallery-item"><img src="https://made2ordermerch.com/cdn/shop/files/Screenshot_2026-02-23_at_7.34.51_PM.png?v=1771893313&width=600" alt="Custom packaging print" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:8px"></div>
+      <div class="gallery-item"><img src="https://made2ordermerch.com/cdn/shop/files/Screenshot_2026-03-02_at_4.52.32_PM.png?v=1772488365&width=600" alt="Custom packaging print" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:8px"></div>
+      <div class="gallery-item"><img src="https://made2ordermerch.com/cdn/shop/files/Screenshot_2026-03-02_at_5.03.45_PM.png?v=1772489066&width=600" alt="Custom packaging print" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:8px"></div>
+      <div class="gallery-item"><img src="https://made2ordermerch.com/cdn/shop/files/Screenshot_2026-03-02_at_4.46.41_PM.png?v=1772488017&width=600" alt="Custom packaging print" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:8px"></div>
+      <div class="gallery-item"><img src="https://made2ordermerch.com/cdn/shop/files/Screenshot_2026-03-02_at_4.41.54_PM.png?v=1772487724&width=600" alt="Custom packaging print" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:8px"></div>
+      <div class="gallery-item"><img src="https://made2ordermerch.com/cdn/shop/files/Screenshot_2026-03-02_at_4.40.56_PM.png?v=1772487670&width=600" alt="Custom packaging print" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:8px"></div>
+      <div class="gallery-item"><img src="https://made2ordermerch.com/cdn/shop/files/IMG_3913.jpg?v=1751499897&width=600" alt="Custom packaging print" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:8px"></div>
+      <div class="gallery-item"><img src="https://made2ordermerch.com/cdn/shop/files/IMG_3917.jpg?v=1771462654&width=600" alt="Custom packaging print" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:8px"></div>
+      <div class="gallery-item"><img src="https://made2ordermerch.com/cdn/shop/files/Screenshot_2026-02-05_at_5.58.50_PM.png?v=1770332359&width=600" alt="Custom packaging print" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:8px"></div>
+      <div class="gallery-item"><img src="https://made2ordermerch.com/cdn/shop/files/IMG_3915.jpg?v=1751500126&width=600" alt="Custom packaging print" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:8px"></div>
+      <div class="gallery-item"><img src="https://made2ordermerch.com/cdn/shop/files/Screenshot_2026-02-18_at_8.00.18_PM.png?v=1771462838&width=600" alt="Custom packaging print" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:8px"></div>
     </div>
     <div class="container" style="margin-top:32px">
       <a href="https://www.instagram.com/graphicsandpackaging" target="_blank" class="btn btn-outline" style="display:inline-flex">📸 &nbsp;Follow @graphicsandpackaging</a>
@@ -1012,7 +1034,7 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
         </div>
         <div class="faq-item">
           <div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">We ship worldwide.</span><span class="faq-icon">+</span></div>
-          <div class="faq-a"><div class="faq-a-inner">All orders ship free worldwide. No surprise fees at checkout — the price you see is the price you pay, delivered to your door no matter where you are.</div></div>
+          <div class="faq-a"><div class="faq-a-inner">All orders ship worldwide. No surprise fees at checkout — the price you see is the price you pay, delivered to your door no matter where you are.</div></div>
         </div>
         <div class="faq-item">
           <div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">Packaging &amp; production experts.</span><span class="faq-icon">+</span></div>
@@ -1035,7 +1057,7 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
         <li>Unlimited colors, edge to edge high definition print</li>
         <li>Low MOQs with bulk pricing and large volume price breaks</li>
         <li>All finishes, add-ons and embellishments available</li>
-        <li>All-inclusive pricing — free shipping worldwide with every order</li>
+        <li>All-inclusive pricing — shipping worldwide with every order</li>
       </ul>
       <div class="bags-hero-btns">
         <button class="btn btn-gold" onclick="showPage('templates')">Need Templates?</button>
@@ -1100,7 +1122,7 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
         <li>Folding boxes, retail-ready packaging and display boxes</li>
         <li>Low minimums starting at 50–100 pieces</li>
         <li>All finishes including Gloss, Matte, Holo, Soft Touch and UV Spot</li>
-        <li>All-inclusive pricing — free shipping worldwide</li>
+        <li>All-inclusive pricing — shipping worldwide</li>
       </ul>
       <div class="bags-hero-btns">
         <button class="btn btn-gold" onclick="showPage('quote')">Get a Quote →</button>
@@ -1473,31 +1495,57 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
 
 <!-- ============================================================ PAGE: TEMPLATES -->
 <div id="page-templates" class="page">
-  <section class="bags-hero">
-    <div class="container">
-      <div class="label">Free Downloads</div>
-      <h1>Design Templates</h1>
-      <p>Download a free template for your designer. All templates are sized correctly for print and include bleed, safe zones, and fold lines.</p>
+  <div class="bags-hero"><div class="container">
+    <div class="label">Design Resources</div>
+    <h1>Templates</h1>
+    <p style="color:var(--gray);font-size:16px;line-height:1.7;max-width:600px;margin-bottom:24px">Download your template, build your artwork inside the template, and upload with your order.</p>
+    <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(48,197,255,0.08);border:1px solid rgba(48,197,255,0.2);color:var(--sky);font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:8px 16px;border-radius:4px">✦ &nbsp;All templates are free print-ready PDF files</div>
+  </div></div>
+  <div style="background:var(--dark2);padding:20px 0 80px"><div class="container">
+    <div class="ptabs" style="margin:32px 0 40px">
+      <button class="ptab active" id="tpl-tab-bags" onclick="switchTplTab('bags')">🛍 Bags</button>
+      <button class="ptab" id="tpl-tab-boxes" onclick="switchTplTab('boxes')">📦 Boxes</button>
+      <button class="ptab" id="tpl-tab-request" onclick="switchTplTab('request')">✦ Request</button>
     </div>
-  </section>
-  <section class="templates-section">
-    <div class="container">
-      <div class="label">Bag Templates</div>
-      <h2 class="section-title">Download Your <span>Template</span></h2>
-      <p class="section-desc">Templates are available in AI, PSD, and PDF formats. Need a custom template for an unlisted size? <a onclick="showPage('quote')" style="color:var(--gold);cursor:pointer">Contact us.</a></p>
+    <div id="tpl-bags">
+      <p style="color:var(--gray);font-size:14px;margin-bottom:32px">All standard direct print bag sizes. Click to download the PDF template for your size.</p>
       <div class="templates-grid">
-        <div class="template-card"><div class="template-icon">📄</div><div class="template-title">3Ã3" Flat Pouch</div><p class="template-desc">Template for 3Ã3" flat mylar bags. Includes bleed and safe zone guides.</p><div class="template-dl">⬇ Download Template</div></div>
-        <div class="template-card"><div class="template-icon">📄</div><div class="template-title">3Ã5" Flat Pouch</div><p class="template-desc">Template for 3Ã5" flat mylar bags.</p><div class="template-dl">⬇ Download Template</div></div>
-        <div class="template-card"><div class="template-icon">📄</div><div class="template-title">2Ã7" Pre-Roll</div><p class="template-desc">Template for 2Ã7" pre-roll / vape pouches.</p><div class="template-dl">⬇ Download Template</div></div>
-        <div class="template-card"><div class="template-icon">📄</div><div class="template-title">4Ã5" Stand-Up</div><p class="template-desc">Template for 4Ã5" stand-up mylar bags.</p><div class="template-dl">⬇ Download Template</div></div>
-        <div class="template-card"><div class="template-icon">📄</div><div class="template-title">5Ã7" Stand-Up</div><p class="template-desc">Template for 5Ã7" stand-up mylar bags.</p><div class="template-dl">⬇ Download Template</div></div>
-        <div class="template-card"><div class="template-icon">📄</div><div class="template-title">6Ã9" Stand-Up</div><p class="template-desc">Template for 6Ã9" stand-up mylar bags.</p><div class="template-dl">⬇ Download Template</div></div>
-        <div class="template-card"><div class="template-icon">📄</div><div class="template-title">7Ã10" Stand-Up</div><p class="template-desc">Template for 7Ã10" stand-up mylar bags.</p><div class="template-dl">⬇ Download Template</div></div>
-        <div class="template-card"><div class="template-icon">📄</div><div class="template-title">Custom Box</div><p class="template-desc">Folding box dieline template. Contact us for custom dimensions.</p><div class="template-dl">⬇ Download Template</div></div>
-        <div class="template-card" onclick="showPage('design')" style="background:rgba(245,166,35,0.05);border-color:var(--gold-border)"><div class="template-icon">🎨</div><div class="template-title">Need a Custom Template?</div><p class="template-desc">Don't see the size you need? Our design team can create a custom dieline for any product.</p><div class="template-dl" style="color:var(--sky)">→ Hire Us to Design</div></div>
+        <div class="template-card"><div class="template-icon">🛍</div><span style="background:var(--sky);color:#000;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:10px;letter-spacing:2px;padding:3px 8px;border-radius:3px;margin-bottom:10px;display:inline-block">FLAT POUCH</span><div class="template-title">3×3"</div><div class="template-desc">Seeds / rings</div><a href="https://cdn.shopify.com/s/files/1/0598/9567/7077/files/80x80.pdf?v=1770652715" target="_blank" class="template-dl">↓ &nbsp;Download PDF</a></div>
+        <div class="template-card"><div class="template-icon">🛍</div><span style="background:var(--sky);color:#000;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:10px;letter-spacing:2px;padding:3px 8px;border-radius:3px;margin-bottom:10px;display:inline-block">FLAT POUCH</span><div class="template-title">3×5"</div><div class="template-desc">Jewelry / samples</div><a href="https://cdn.shopify.com/s/files/1/0598/9567/7077/files/80x130.pdf?v=1772588495" target="_blank" class="template-dl">↓ &nbsp;Download PDF</a></div>
+        <div class="template-card"><div class="template-icon">🛍</div><span style="background:var(--sky);color:#000;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:10px;letter-spacing:2px;padding:3px 8px;border-radius:3px;margin-bottom:10px;display:inline-block">FLAT POUCH</span><div class="template-title">2×7"</div><div class="template-desc">Vapes / pre-rolls</div><a href="https://cdn.shopify.com/s/files/1/0598/9567/7077/files/51x180.pdf?v=1772588811" target="_blank" class="template-dl">↓ &nbsp;Download PDF</a></div>
+        <div class="template-card"><div class="template-icon">🛍</div><span style="background:var(--gold);color:#000;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:10px;letter-spacing:2px;padding:3px 8px;border-radius:3px;margin-bottom:10px;display:inline-block">STAND UP</span><div class="template-title">4×5"</div><div class="template-desc">3.5g of flower — most popular</div><a href="https://cdn.shopify.com/s/files/1/0598/9567/7077/files/100x127_50.pdf?v=1770652715" target="_blank" class="template-dl">↓ &nbsp;Download PDF</a></div>
+        <div class="template-card"><div class="template-icon">🛍</div><span style="background:var(--gold);color:#000;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:10px;letter-spacing:2px;padding:3px 8px;border-radius:3px;margin-bottom:10px;display:inline-block">STAND UP</span><div class="template-title">4×6"</div><div class="template-desc">10–20 gummy candies</div><a href="https://cdn.shopify.com/s/files/1/0598/9567/7077/files/100x150_50.pdf?v=1770652715" target="_blank" class="template-dl">↓ &nbsp;Download PDF</a></div>
+        <div class="template-card"><div class="template-icon">🛍</div><span style="background:var(--gold);color:#000;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:10px;letter-spacing:2px;padding:3px 8px;border-radius:3px;margin-bottom:10px;display:inline-block">STAND UP</span><div class="template-title">5×7"</div><div class="template-desc">12oz of loose leaf tea</div><a href="https://cdn.shopify.com/s/files/1/0598/9567/7077/files/130x180_80.pdf?v=1770652715" target="_blank" class="template-dl">↓ &nbsp;Download PDF</a></div>
+        <div class="template-card"><div class="template-icon">🛍</div><span style="background:var(--gold);color:#000;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:10px;letter-spacing:2px;padding:3px 8px;border-radius:3px;margin-bottom:10px;display:inline-block">STAND UP</span><div class="template-title">5×8"</div><div class="template-desc">5oz of almonds</div><a href="https://cdn.shopify.com/s/files/1/0598/9567/7077/files/130x205_80.pdf?v=1770652715" target="_blank" class="template-dl">↓ &nbsp;Download PDF</a></div>
+        <div class="template-card"><div class="template-icon">🛍</div><span style="background:var(--gold);color:#000;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:10px;letter-spacing:2px;padding:3px 8px;border-radius:3px;margin-bottom:10px;display:inline-block">STAND UP</span><div class="template-title">6×9"</div><div class="template-desc">25 wrapped chocolates</div><a href="https://cdn.shopify.com/s/files/1/0598/9567/7077/files/150x230_80.pdf?v=1770652715" target="_blank" class="template-dl">↓ &nbsp;Download PDF</a></div>
+        <div class="template-card"><div class="template-icon">🛍</div><span style="background:var(--gold);color:#000;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:10px;letter-spacing:2px;padding:3px 8px;border-radius:3px;margin-bottom:10px;display:inline-block">STAND UP</span><div class="template-title">7×10"</div><div class="template-desc">15oz beef jerky / large items</div><a href="https://cdn.shopify.com/s/files/1/0598/9567/7077/files/180x255_80.pdf?v=1770652715" target="_blank" class="template-dl">↓ &nbsp;Download PDF</a></div>
       </div>
     </div>
-  </section>
+    <div id="tpl-boxes" style="display:none">
+      <p style="color:var(--gray);font-size:14px;margin-bottom:32px">Custom folding box templates for bags and products.</p>
+      <div class="templates-grid">
+        <div class="template-card"><div class="template-icon">📦</div><span style="background:var(--orange);color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:10px;letter-spacing:2px;padding:3px 8px;border-radius:3px;margin-bottom:10px;display:inline-block">PRODUCT BOX</span><div class="template-title">3×3×3"</div><div class="template-desc">Jar box</div><a href="https://cdn.shopify.com/s/files/1/0598/9567/7077/files/3x3x3_product_box.pdf?v=1771877931" target="_blank" class="template-dl">↓ &nbsp;Download PDF</a></div>
+        <div class="template-card"><div class="template-icon">📦</div><span style="background:var(--orange);color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:10px;letter-spacing:2px;padding:3px 8px;border-radius:3px;margin-bottom:10px;display:inline-block">PRODUCT BOX</span><div class="template-title">4×5×2"</div><div class="template-desc">Fits 4×5 bag</div><a href="https://cdn.shopify.com/s/files/1/0598/9567/7077/files/4.1x5.1x1.75_fits_4x5_bag_product_box.pdf?v=1771877931" target="_blank" class="template-dl">↓ &nbsp;Download PDF</a></div>
+        <div class="template-card"><div class="template-icon">📦</div><span style="background:var(--orange);color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:10px;letter-spacing:2px;padding:3px 8px;border-radius:3px;margin-bottom:10px;display:inline-block">PRODUCT BOX</span><div class="template-title">4×6×2"</div><div class="template-desc">Fits 4×6 bag</div><a href="https://cdn.shopify.com/s/files/1/0598/9567/7077/files/4.1x6.1x2_fits_4x6_bag_product_box.pdf?v=1771877931" target="_blank" class="template-dl">↓ &nbsp;Download PDF</a></div>
+        <div class="template-card"><div class="template-icon">📦</div><span style="background:var(--orange);color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:10px;letter-spacing:2px;padding:3px 8px;border-radius:3px;margin-bottom:10px;display:inline-block">PRODUCT BOX</span><div class="template-title">5×7×2.5"</div><div class="template-desc">Fits 5×7 bag</div><a href="https://cdn.shopify.com/s/files/1/0598/9567/7077/files/5.1x7.1x2.25_fits_5x7_bag_product_box.pdf?v=1771877931" target="_blank" class="template-dl">↓ &nbsp;Download PDF</a></div>
+        <div class="template-card"><div class="template-icon">📦</div><span style="background:var(--orange);color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:10px;letter-spacing:2px;padding:3px 8px;border-radius:3px;margin-bottom:10px;display:inline-block">PRODUCT BOX</span><div class="template-title">6×9×2.5"</div><div class="template-desc">Fits 6×9 bag</div><a href="https://cdn.shopify.com/s/files/1/0598/9567/7077/files/6.1x9.1x2.75_fits_6x9_bag_product_box.pdf?v=1771877931" target="_blank" class="template-dl">↓ &nbsp;Download PDF</a></div>
+        <div class="template-card"><div class="template-icon">📦</div><span style="background:var(--orange);color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:10px;letter-spacing:2px;padding:3px 8px;border-radius:3px;margin-bottom:10px;display:inline-block">PRODUCT BOX</span><div class="template-title">8×10×3"</div><div class="template-desc">T-shirt box</div><a href="https://cdn.shopify.com/s/files/1/0598/9567/7077/files/8x10x3_fits_t-shirt_product_box.pdf?v=1771877931" target="_blank" class="template-dl">↓ &nbsp;Download PDF</a></div>
+        <div class="template-card"><div class="template-icon">📦</div><span style="background:var(--orange);color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:10px;letter-spacing:2px;padding:3px 8px;border-radius:3px;margin-bottom:10px;display:inline-block">BOX STYLE</span><div class="template-title">Cigarette Style</div><div class="template-desc">Pre-roll cigarette box</div><a href="https://cdn.shopify.com/s/files/1/0598/9567/7077/files/King_Size_PreRoll_Box_-_Cigarette_Box_772b0df1-acf0-496d-aaf6-4e6befe18ae5.pdf?v=1771878591" target="_blank" class="template-dl">↓ &nbsp;Download PDF</a></div>
+        <div class="template-card"><div class="template-icon">📦</div><span style="background:var(--orange);color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:10px;letter-spacing:2px;padding:3px 8px;border-radius:3px;margin-bottom:10px;display:inline-block">BOX STYLE</span><div class="template-title">Childproof Cart Box</div><div class="template-desc">1g cartridge box</div><a href="https://cdn.shopify.com/s/files/1/0598/9567/7077/files/1g_Cart_Box_Template.pdf?v=1739985317" target="_blank" class="template-dl">↓ &nbsp;Download PDF</a></div>
+      </div>
+    </div>
+    <div id="tpl-request" style="display:none">
+      <div style="max-width:600px;background:var(--dark3);border:1px solid var(--border);border-radius:12px;padding:48px">
+        <h2 style="font-family:'Bebas Neue',sans-serif;font-size:36px;letter-spacing:1px;margin-bottom:12px">Need a Custom Size?</h2>
+        <p style="color:var(--gray);font-size:15px;line-height:1.7;margin-bottom:28px">Don't see your size? Send us your specs and we'll get a template to you within 24 hours — free.</p>
+        <div class="form-group"><label>Your Name</label><input type="text" placeholder="Jane Smith"></div>
+        <div class="form-group"><label>Email</label><input type="email" placeholder="your@email.com"></div>
+        <div class="form-group"><label>Dimensions</label><input type="text" placeholder='e.g. 4x6x1.5 stand-up pouch'></div>
+        <div class="form-group"><label>Notes</label><textarea placeholder="Any special requirements..."></textarea></div>
+        <button class="btn btn-gold" style="width:100%;justify-content:center" onclick="alert('Request submitted! We will email your template within 24 hours.')">Submit Request</button>
+      </div>
+    </div>
+  </div></div>
 </div>
 
 <!-- ============================================================ LEARN PAGES -->
@@ -1539,7 +1587,7 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
           </div>
 
           <h2>Minimum Order &amp; Pricing</h2>
-          <p>Our minimum order quantities start at just 300–500 pieces depending on the bag size. Pricing scales with volume — the more you order, the lower the per-unit cost. All pricing includes worldwide shipping and full-color direct print.</p>
+          <p>Our minimum order quantities start at just 300–500 pieces depending on the bag size. Pricing scales with volume — the more you order, the lower the per-unit cost. All pricing includes full-color direct print.</p>
           <button class="btn btn-gold" onclick="showPage('pricing')">View Full Pricing →</button>
         </div>
         <div class="learn-sidebar">
@@ -1606,16 +1654,16 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
     <div class="container">
       <div class="label">Learn</div>
       <h1>Freeze Dried Candy Packaging</h1>
-      <p>Everything you need to know about packaging for freeze dried candy, gummies, and snacks.</p>
+      <p>Everything you need to know about packaging ze dried candy, gummies, and snacks.</p>
     </div>
   </section>
   <section class="learn-content">
     <div class="container">
       <div class="learn-grid">
         <div class="learn-body">
-          <h2>Why Packaging Matters for Freeze Dried Candy</h2>
+          <h2>Why Packaging Matters ze Dried Candy</h2>
           <p>Freeze dried candy is highly moisture-sensitive. The right packaging keeps your product crunchy and fresh, protects it from humidity, and gives your brand a professional shelf presence that commands premium pricing.</p>
-          <p>Mylar bags are the #1 choice for freeze dried candy brands because of their superior barrier properties — blocking moisture, oxygen, and light better than any standard plastic bag.</p>
+          <p>Mylar bags are the #1 choice ze dried candy brands because of their superior barrier properties — blocking moisture, oxygen, and light better than any standard plastic bag.</p>
           <h2>Best Bag Sizes for Candy</h2>
           <ul>
             <li><strong>3Ã5" flat pouch</strong> — single-serving snack bags</li>
@@ -1867,21 +1915,8 @@ function closeContact() {
 }
 
 // Mobile menu
-function toggleMobileMenu() {
-  const links = document.getElementById('navLinks');
-  const isOpen = links.style.display === 'flex';
-  links.style.display = isOpen ? 'none' : 'flex';
-  if (!isOpen) {
-    Object.assign(links.style, {
-      flexDirection:'column', position:'fixed', top:'70px', left:'0',
-      width:'100%', background:'rgba(0,0,0,0.98)', padding:'20px',
-      gap:'4px', borderBottom:'1px solid rgba(245,166,35,0.2)',
-      zIndex:'8999', maxHeight:'80vh', overflowY:'auto'
-    });
-  }
-}
+function toggleMobileMenu(){var l=document.getElementById('navLinks');if(!l)return;if(l.classList.contains('mobile-open')){closeMobileMenu();}else{l.classList.add('mobile-open');l.querySelectorAll('.dropdown,.nav-item').forEach(function(d){d.removeAttribute('style');});}}
 
-// Show hamburger on mobile
 function checkMobile() {
   const ham = document.getElementById('hamburgerBtn');
   if (ham) ham.style.display = window.innerWidth <= 768 ? 'flex' : 'none';
@@ -1921,7 +1956,7 @@ document.querySelectorAll('.nav-item a[onclick]').forEach(a => {
     this.classList.add('active');
   });
 });
-</script>
+function switchTplTab(t){["bags","boxes","request"].forEach(function(x){var el=document.getElementById("tpl-"+x);if(el)el.style.display=x===t?"block":"none";var b=document.getElementById("tpl-tab-"+x);if(b)b.classList.toggle("active",x===t);});}</script>
 
 </body>
 </html>
