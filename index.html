@@ -1,4 +1,20 @@
-<!DOCTYPE html>
+<div class="seller-card" onclick="showPage('pricing')">
+            <div class="seller-img"><img src="https://made2ordermerch.com/cdn/shop/files/4x6_stand_up_600x.jpg" alt="4x6 Stand Up Mylar Bag" loading="lazy" style="width:100%;height:100%;object-fit:cover" onerror="this.parentElement.style.background='#1a1a1a'"></div>
+            <div class="seller-body">
+              <div class="seller-price">From $1.12 per bag @ 500pcs</div>
+              <div class="seller-title">4×6” Direct Print Mylar Bags</div>
+              <div class="seller-btn">View Product</div>
+            </div>
+          </div
+          <div class="seller-card" onclick="showPage('pricing')">
+            <div class="seller-img"><img src="https://made2ordermerch.com/cdn/shop/files/5x8_stand_up_600x.jpg" alt="5x8 Stand Up Mylar Bag" loading="lazy" style="width:100%;height:100%;object-fit:cover" onerror="this.parentElement.style.background='#1a1a1a'"></div>
+            <div class="seller-body">
+              <div class="seller-price">From $1.94 per bag @ 300pcs</div>
+              <div class="seller-title">5×8” Direct Print Mylar Bags</div>
+              <div class="seller-btn">View Product</div>
+            </div>
+          </div>>
+          <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -1094,7 +1110,7 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
         <li>Folding boxes, retail-ready packaging and display boxes</li>
         <li>Low minimums starting at 50–100 pieces</li>
         <li>All finishes including Gloss, Matte, Holo, Soft Touch and UV Spot</li>
-        <li>All-inclusive pricing — worldwide shipping</li>
+        <li>All-inclusive pricing — full-color direct print</li>
       </ul>
       <div class="bags-hero-btns">
         <button class="btn btn-gold" onclick="showPage('quote')">Get a Quote →</button>
@@ -1227,6 +1243,21 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
             </div>
           </div>
 
+          
+          <div class="ptable-size-row" id="ps-4x6">
+            <div class="ptable-size-trigger" onclick="togglePSize('ps-4x6')">
+              <div class="ptable-size-name">🛍 4×6” Mylar Bags <span class="ptable-size-sub">Stand-Up · MOQ 500</span></div>
+              <div class="ptable-size-meta">Starting at $1.12/bag &nbsp;<span class="ptable-plus">+</span></div>
+            </div>
+            <div class="ptable-rows" id="ps-4x6-rows">
+              <div class="ptable-row"><div class="ptable-cell ptable-finish">Gloss</div><div class="ptable-cell">$1.12</div><div class="ptable-cell">$0.80</div><div class="ptable-cell">$0.58</div><div class="ptable-cell">$0.38</div><div class="ptable-cell">$0.29</div></div>
+              <div class="ptable-row"><div class="ptable-cell ptable-finish">Matte</div><div class="ptable-cell">$1.12</div><div class="ptable-cell">$0.80</div><div class="ptable-cell">$0.58</div><div class="ptable-cell">$0.38</div><div class="ptable-cell">$0.29</div></div>
+              <div class="ptable-row"><div class="ptable-cell ptable-finish">Holo</div><div class="ptable-cell">$1.16</div><div class="ptable-cell">$0.84</div><div class="ptable-cell">$0.60</div><div class="ptable-cell">$0.40</div><div class="ptable-cell">$0.31</div></div>
+              <div class="ptable-row"><div class="ptable-cell ptable-finish">Soft Touch</div><div class="ptable-cell">$1.18</div><div class="ptable-cell">$0.88</div><div class="ptable-cell">$0.61</div><div class="ptable-cell">$0.41</div><div class="ptable-cell">$0.32</div></div>
+              <div class="ptable-row"><div class="ptable-cell ptable-finish">UV Spot</div><div class="ptable-cell">$1.55</div><div class="ptable-cell">$1.02</div><div class="ptable-cell">$0.63</div><div class="ptable-cell">$0.41</div><div class="ptable-cell">$0.33</div></div>
+              <div class="ptable-row"><div class="ptable-cell ptable-finish">UV Holo</div><div class="ptable-cell">$1.63</div><div class="ptable-cell">$1.07</div><div class="ptable-cell">$0.64</div><div class="ptable-cell">$0.43</div><div class="ptable-cell">$0.34</div></div>
+            </div>
+          </div>
           <div class="ptable-size-row" id="ps-5x7">
             <div class="ptable-size-trigger" onclick="togglePSize('ps-5x7')">
               <div class="ptable-size-name">🛍 5×7" Mylar Bags <span class="ptable-size-sub">Stand-Up · MOQ 300</span></div>
@@ -1241,6 +1272,20 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
             </div>
           </div>
 
+          
+          <div class="ptable-size-row" id="ps-5x8">
+            <div class="ptable-size-trigger" onclick="togglePSize('ps-5x8')">
+              <div class="ptable-size-name">🛍 5×8” Mylar Bags <span class="ptable-size-sub">Stand-Up · MOQ 300</span></div>
+              <div class="ptable-size-meta">Starting at $1.94/bag &nbsp;<span class="ptable-plus">+</span></div>
+            </div>
+            <div class="ptable-rows" id="ps-5x8-rows">
+              <div class="ptable-row"><div class="ptable-cell ptable-finish">Gloss</div><div class="ptable-cell">$1.94</div><div class="ptable-cell">$1.38</div><div class="ptable-cell">$1.00</div><div class="ptable-cell">$0.73</div><div class="ptable-cell">$0.53</div></div>
+              <div class="ptable-row"><div class="ptable-cell ptable-finish">Matte</div><div class="ptable-cell">$1.94</div><div class="ptable-cell">$1.38</div><div class="ptable-cell">$1.00</div><div class="ptable-cell">$0.73</div><div class="ptable-cell">$0.53</div></div>
+              <div class="ptable-row"><div class="ptable-cell ptable-finish">Holo</div><div class="ptable-cell">$2.05</div><div class="ptable-cell">$1.47</div><div class="ptable-cell">$1.05</div><div class="ptable-cell">$0.75</div><div class="ptable-cell">$0.55</div></div>
+              <div class="ptable-row"><div class="ptable-cell ptable-finish">Soft Touch</div><div class="ptable-cell">$2.15</div><div class="ptable-cell">$1.54</div><div class="ptable-cell">$1.12</div><div class="ptable-cell">$0.77</div><div class="ptable-cell">$0.57</div></div>
+              <div class="ptable-row"><div class="ptable-cell ptable-finish">UV Spot</div><div class="ptable-cell">$2.41</div><div class="ptable-cell">$1.65</div><div class="ptable-cell">$1.24</div><div class="ptable-cell">$0.94</div><div class="ptable-cell">$0.69</div></div>
+            </div>
+          </div>
           <div class="ptable-size-row" id="ps-6x9">
             <div class="ptable-size-trigger" onclick="togglePSize('ps-6x9')">
               <div class="ptable-size-name">🛍 6×9" Mylar Bags <span class="ptable-size-sub">Stand-Up · MOQ 300</span></div>
@@ -1269,7 +1314,7 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
           </div>
 
         </div><!-- end ptable-wrap -->
-        <p style="color:var(--gray);font-size:13px;text-align:center">* Worldwide shipping available. <a onclick="showPage('quote')" style="color:var(--gold);cursor:pointer">Need a custom quote? →</a></p>
+        <p style="color:var(--gray);font-size:13px;text-align:center"> <a onclick="showPage('quote')" style="color:var(--gold);cursor:pointer">Need a custom quote? →</a></p>
       </div><!-- end ptab-mylar -->
 
       <div id="ptab-boxes" style="display:none">
