@@ -7,7 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:ital,wght@0,300;0,400;0,600;0,700;0,900;1,700&family=Barlow:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 /* ============================================================
-   CSS VARIABLES — pulled from logo: gold, orange, sky blue
+   CSS VARIABLES â pulled from logo: gold, orange, sky blue
    ============================================================ */
 :root {
   --gold:    #F5A623;
@@ -76,7 +76,7 @@ nav{
   display:flex;align-items:center;justify-content:space-between;gap:20px
 }
 .nav-logo{display:flex;align-items:center;gap:10px;cursor:pointer}
-.nav-logo img{height:48px;filter:drop-shadow(0 0 8px rgba(245,166,35,0.3))}
+.nav-logo img{height:48px;filter:drop-shadow(0 0 8px rgba(245,166,35,0.3));mix-blend-mode:screen}
 .nav-logo-text{font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:2px;line-height:1.1}
 .nav-logo-text span{color:var(--sky)}
 .nav-links{display:flex;align-items:center;gap:2px}
@@ -160,7 +160,7 @@ nav{
   padding:6px 14px;border-radius:100px;margin-bottom:22px;
   animation:fadeup 0.6s ease both
 }
-.hero-badge::before{content:'●';font-size:7px;animation:blink 2s infinite}
+.hero-badge::before{content:'â';font-size:7px;animation:blink 2s infinite}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0.3}}
 .hero-h1{
   font-family:'Bebas Neue',sans-serif;
@@ -212,7 +212,7 @@ nav{
   font-family:'Bebas Neue',sans-serif;font-size:17px;
   letter-spacing:3px;color:var(--black);padding:0 36px;flex-shrink:0
 }
-.marquee-item::after{content:'✦';padding-left:36px;font-size:10px}
+.marquee-item::after{content:'â¦';padding-left:36px;font-size:10px}
 @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
 /* WHAT WE PRINT */
@@ -381,7 +381,7 @@ nav{
   color:var(--lgray);font-size:15px;padding:6px 0;
   display:flex;align-items:flex-start;gap:10px
 }
-.bags-bullets li::before{content:'✦';color:var(--gold);font-size:11px;margin-top:3px;flex-shrink:0}
+.bags-bullets li::before{content:'â¦';color:var(--gold);font-size:11px;margin-top:3px;flex-shrink:0}
 .bags-hero-btns{display:flex;gap:12px;flex-wrap:wrap}
 
 .size-guide{background:var(--dark3);border:1px solid var(--border);border-radius:8px;padding:20px 28px;margin:48px 0;cursor:pointer;transition:border-color 0.2s}
@@ -479,7 +479,7 @@ nav{
 .design-hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(40px,5vw,64px);letter-spacing:2px;margin-bottom:16px}
 .design-bullets{list-style:none;margin-bottom:32px}
 .design-bullets li{color:var(--lgray);font-size:15px;padding:6px 0;display:flex;gap:10px}
-.design-bullets li::before{content:'✦';color:var(--gold);font-size:11px;margin-top:3px;flex-shrink:0}
+.design-bullets li::before{content:'â¦';color:var(--gold);font-size:11px;margin-top:3px;flex-shrink:0}
 
 .design-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin:56px 0}
 .design-step{background:var(--dark3);border:1px solid var(--border);border-radius:10px;padding:32px}
@@ -582,7 +582,7 @@ nav{
 footer{display:block !important;background:#050505;border-top:1px solid var(--border);padding:70px 0 30px}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:60px}
 .footer-brand-logo{display:flex;align-items:center;gap:10px;margin-bottom:16px}
-.footer-brand-logo img{height:44px}
+.footer-brand-logo img{height:44px;mix-blend-mode:screen}
 .footer-brand-logo-text{font-family:'Bebas Neue',sans-serif;font-size:17px;letter-spacing:2px;line-height:1.1}
 .footer-brand-logo-text span{color:var(--sky)}
 .footer-tagline{color:var(--gray);font-size:13px;line-height:1.7;margin-bottom:20px}
@@ -689,7 +689,7 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
 
 <!-- ============================================================ ANNOUNCE -->
 <div class="announce">
-  🔥 FREE WORLDWIDE SHIPPING ON ALL ORDERS &nbsp;·&nbsp; 7 BUSINESS DAY TURNAROUND &nbsp;·&nbsp; LOW MINIMUMS FROM 300PCS 🔥
+  ð¥ FREE WORLDWIDE SHIPPING ON ALL ORDERS &nbsp;Â·&nbsp; 7 BUSINESS DAY TURNAROUND &nbsp;Â·&nbsp; LOW MINIMUMS FROM 300PCS ð¥
 </div>
 
 <!-- ============================================================ NAV -->
@@ -706,7 +706,7 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
     </button>
     <ul class="nav-links" id="navLinks">
       <li class="nav-item" id="nav-print">
-        <button class="nav-btn" onclick="toggleDropdown('nav-print')">PRINT <span class="nav-chevron">▾</span></button>
+        <button class="nav-btn" onclick="toggleDropdown('nav-print')">PRINT <span class="nav-chevron">â¾</span></button>
         <div class="dropdown">
           <a onclick="showPage('bags');closeDropdowns()">BAGS</a>
           <a onclick="showPage('boxes');closeDropdowns()">BOXES</a>
@@ -719,7 +719,7 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
       <li class="nav-item"><a onclick="showPage('quote')">QUOTE ME</a></li>
       <li class="nav-item"><a onclick="showPage('reorder')">REORDER</a></li>
       <li class="nav-item" id="nav-learn">
-        <button class="nav-btn" onclick="toggleDropdown('nav-learn')">LEARN <span class="nav-chevron">▾</span></button>
+        <button class="nav-btn" onclick="toggleDropdown('nav-learn')">LEARN <span class="nav-chevron">â¾</span></button>
         <div class="dropdown">
           <a onclick="showPage('guide-mylar');closeDropdowns()">CUSTOM MYLAR BAG GUIDE</a>
           <a onclick="showPage('guide-printing');closeDropdowns()">DIGITAL VS. GRAVURE PRINTING</a>
@@ -748,15 +748,15 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
           <em>Made Easy.</em>
           <span class="blue" style="display:block;font-size:0.55em;letter-spacing:3px;margin-top:8px">graphicsandpackaging.com</span>
         </h1>
-        <p class="hero-p">Full-color direct print <strong>Mylar bags, candy bags, product boxes</strong> &amp; retail-ready bundles. Low minimums, <strong>7-day turnaround</strong>, free shipping worldwide.</p>
+        <p class="hero-p">Full-color direct print <strong>Mylar bags, candy bags, product boxes</strong> &amp; retail-ready bundles. Low minimums &amp; <strong>14-day turnaround</strong>.</p>
         <div class="hero-btns">
-          <button class="btn btn-gold" onclick="showPage('bags')">Shop Now →</button>
+          <button class="btn btn-gold" onclick="showPage('bags')">Shop Now â</button>
           <button class="btn btn-outline" onclick="showPage('design')">Design Services</button>
         </div>
         <div class="hero-stats">
           <div><div class="stat-n">500+</div><div class="stat-l">Brands Served</div></div>
-          <div><div class="stat-n">7</div><div class="stat-l">Days Avg. Turnaround</div></div>
-          <div><div class="stat-n">FREE</div><div class="stat-l">Shipping Worldwide</div></div>
+          <div><div class="stat-n">300+</div><div class="stat-l">Min Order Bags</div></div>
+          <div><div class="stat-n">14</div><div class="stat-l">Day Turnaround</div></div>
         </div>
       </div>
       <div class="hero-right">
@@ -774,17 +774,17 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
       <span class="marquee-item">Candy Packaging</span>
       <span class="marquee-item">Direct Print Boxes</span>
       <span class="marquee-item">Freeze Dried Candy</span>
-      <span class="marquee-item">Gloss · Matte · Holo · Soft Touch</span>
-      <span class="marquee-item">Free Worldwide Shipping</span>
-      <span class="marquee-item">7 Business Day Turnaround</span>
+      <span class="marquee-item">Gloss Â· Matte Â· Holo Â· Soft Touch</span>
+      <span class="marquee-item">14 Business Day Turnaround</span>
+      <span class="marquee-item">Custom Direct Print</span>
       <span class="marquee-item">Low Minimums 300pcs</span>
       <span class="marquee-item">Custom Mylar Bags</span>
       <span class="marquee-item">Candy Packaging</span>
       <span class="marquee-item">Direct Print Boxes</span>
       <span class="marquee-item">Freeze Dried Candy</span>
-      <span class="marquee-item">Gloss · Matte · Holo · Soft Touch</span>
-      <span class="marquee-item">Free Worldwide Shipping</span>
-      <span class="marquee-item">7 Business Day Turnaround</span>
+      <span class="marquee-item">Gloss Â· Matte Â· Holo Â· Soft Touch</span>
+      <span class="marquee-item">14 Business Day Turnaround</span>
+      <span class="marquee-item">Custom Direct Print</span>
       <span class="marquee-item">Low Minimums 300pcs</span>
     </div>
   </div>
@@ -792,26 +792,26 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
   <!-- WHAT WE PRINT -->
   <section class="print-section">
     <div class="container">
-      <div class="label">7 Business Days to Print</div>
+      <div class="label">14 Business Day Turnaround</div>
       <h2 class="section-title">What We <span>Print</span></h2>
-      <p class="section-desc">From premium Mylar bags to candy packaging, product boxes and bundles — we print it all at unmatched quality.</p>
+      <p class="section-desc">From premium Mylar bags to candy packaging, product boxes and bundles â we print it all at unmatched quality.</p>
       <div class="print-grid">
         <div class="print-card" onclick="showPage('bags')">
           <div class="print-card-img" style="padding:0"><img src="https://made2ordermerch.com/cdn/shop/files/Untitled_design_39.png?v=1771461799&width=900" style="width:100%;height:100%;object-fit:cover" alt="Direct Print Bags"><div class="print-badge">Popular</div></div>
           <div class="print-body">
-            <div class="print-moq">Minimum Order 300–500pcs</div>
+            <div class="print-moq">Minimum Order 300â500pcs</div>
             <div class="print-title">Direct Print Bags</div>
             <p class="print-desc">Stand-up pouches, flat bags, pre-roll pouches and shaped bags. Perfect for cannabis, candy, edibles, herbs and more.</p>
-            <div class="print-link">Shop Now →</div>
+            <div class="print-link">Shop Now â</div>
           </div>
         </div>
         <div class="print-card" onclick="showPage('boxes')">
           <div class="print-card-img" style="padding:0"><img src="https://made2ordermerch.com/cdn/shop/files/Untitled_design_55_d34691e5-1f6b-4993-8660-418a40311396.png?v=1768572862&width=900" style="width:100%;height:100%;object-fit:cover" alt="Direct Print Boxes"><div class="print-badge" style="background:var(--sky)">Min 50pcs</div></div>
           <div class="print-body">
-            <div class="print-moq">Minimum Order 50–100pcs</div>
+            <div class="print-moq">Minimum Order 50â100pcs</div>
             <div class="print-title">Direct Print Boxes</div>
             <p class="print-desc">Custom folding boxes and retail-ready product packaging. Low minimums, full-color print, multiple sizes.</p>
-            <div class="print-link">Shop Now →</div>
+            <div class="print-link">Shop Now â</div>
           </div>
         </div>
         <div class="print-card" onclick="showPage('bundles')">
@@ -820,7 +820,7 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
             <div class="print-moq">Bags + Boxes Combined</div>
             <div class="print-title">Bundles</div>
             <p class="print-desc">Get your bags and boxes together at the best price. Bundle deals for brands who need complete packaging solutions.</p>
-            <div class="print-link">Shop Now →</div>
+            <div class="print-link">Shop Now â</div>
           </div>
         </div>
       </div>
@@ -832,7 +832,7 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
     <div class="container">
       <div class="label">Our Work</div>
       <h2 class="section-title">Some of Our <span>Recent Prints</span></h2>
-      <p class="section-desc">Real prints from real brands — this is what we do. Follow us on Instagram <a href="https://www.instagram.com/graphicsandpackaging" target="_blank" style="color:var(--gold)">@graphicsandpackaging</a> for more.</p>
+      <p class="section-desc">Real prints from real brands â this is what we do. Follow us on Instagram <a href="https://www.instagram.com/graphicsandpackaging" target="_blank" style="color:var(--gold)">@graphicsandpackaging</a> for more.</p>
     </div>
     <div class="gallery-track">
       <div class="gallery-item"><img src="https://made2ordermerch.com/cdn/shop/files/Screenshot_2026-02-24_at_10.58.53_AM_1.png?v=1771948747&width=600" alt="Custom packaging print" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:8px"></div>
@@ -850,7 +850,7 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
       <div class="gallery-item"><img src="https://made2ordermerch.com/cdn/shop/files/Screenshot_2026-02-18_at_8.00.18_PM.png?v=1771462838&width=600" alt="Custom packaging print" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:8px"></div>
     </div>
     <div class="container" style="margin-top:32px">
-      <a href="https://www.instagram.com/graphicsandpackaging" target="_blank" class="btn btn-outline" style="display:inline-flex">📸 &nbsp;Follow @graphicsandpackaging</a>
+      <a href="https://www.instagram.com/graphicsandpackaging" target="_blank" class="btn btn-outline" style="display:inline-flex">ð¸ &nbsp;Follow @graphicsandpackaging</a>
     </div>
   </section>
 
@@ -864,7 +864,7 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
           <div class="seller-img" style="padding:0"><img src="https://made2ordermerch.com/cdn/shop/files/Untitled_design_97.png?v=1771512209&width=800" style="width:100%;height:100%;object-fit:cover" alt="Mylar Bag" loading="lazy"></div>
           <div class="seller-body">
             <div class="seller-price">From $1.05 per bag @ 500pcs</div>
-            <div class="seller-title">4×5" Direct Print Mylar Bags</div>
+            <div class="seller-title">4Ã5" Direct Print Mylar Bags</div>
             <div class="seller-btn">View Product</div>
           </div>
         </div>
@@ -872,7 +872,7 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
           <div class="seller-img" style="padding:0"><img src="https://made2ordermerch.com/cdn/shop/files/Untitled_design_99.png?v=1771512607&width=800" style="width:100%;height:100%;object-fit:cover" alt="Mylar Bag" loading="lazy"></div>
           <div class="seller-body">
             <div class="seller-price">From $1.00 per bag @ 500pcs</div>
-            <div class="seller-title">3×5" Direct Print Mylar Bags</div>
+            <div class="seller-title">3Ã5" Direct Print Mylar Bags</div>
             <div class="seller-btn">View Product</div>
           </div>
         </div>
@@ -880,7 +880,7 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
           <div class="seller-img" style="padding:0"><img src="https://made2ordermerch.com/cdn/shop/files/Untitled_design_100.png?v=1772406881&width=800" style="width:100%;height:100%;object-fit:cover" alt="Mylar Bag" loading="lazy"></div>
           <div class="seller-body">
             <div class="seller-price">From $1.85 per bag @ 300pcs</div>
-            <div class="seller-title">5×7" Direct Print Mylar Bags</div>
+            <div class="seller-title">5Ã7" Direct Print Mylar Bags</div>
             <div class="seller-btn">View Product</div>
           </div>
         </div>
@@ -888,12 +888,12 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
           <div class="seller-img" style="padding:0"><img src="https://made2ordermerch.com/cdn/shop/files/Untitled_design_-_2026-02-19T095413.587.png?v=1771512867&width=800" style="width:100%;height:100%;object-fit:cover" alt="Mylar Bag" loading="lazy"></div>
           <div class="seller-body">
             <div class="seller-price">From $1.99 per bag @ 300pcs</div>
-            <div class="seller-title">6×9" Direct Print Mylar Bags</div>
+            <div class="seller-title">6Ã9" Direct Print Mylar Bags</div>
             <div class="seller-btn">View Product</div>
           </div>
         </div>
       </div>
-      <div style="margin-top:36px"><button class="btn btn-outline" onclick="showPage('bags')">View All →</button></div>
+      <div style="margin-top:36px"><button class="btn btn-outline" onclick="showPage('bags')">View All â</button></div>
     </div>
   </section>
 
@@ -902,7 +902,7 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
     <div class="container">
       <div class="label">3 Step Process</div>
       <h2 class="section-title">How to <span>Order</span></h2>
-      <p class="section-desc">Direct print products take an average of 7 business days to print.</p>
+      <p class="section-desc">Direct print products take an average of 14 business days.</p>
       <div class="steps">
         <div class="step">
           <div class="step-num">1</div>
@@ -917,7 +917,7 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
         <div class="step">
           <div class="step-num">3</div>
           <div class="step-title">Approval &amp; Delivery</div>
-          <p class="step-desc">After approving the print proof, we produce and ship your custom bags right to your door. Free worldwide.</p>
+          <p class="step-desc">After approving the print proof, we produce and ship your custom bags right to your door.</p>
         </div>
       </div>
       <div style="margin-top:48px;display:flex;gap:12px;flex-wrap:wrap">
@@ -934,37 +934,37 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
       <h2 class="section-title">Our Customers Tell It <span>Better Than We Do!</span></h2>
       <div class="reviews-grid">
         <div class="review-card">
-          <div class="review-stars">★★★★★</div>
+          <div class="review-stars">âââââ</div>
           <div class="review-title">Bags came out fire!</div>
-          <p class="review-text">"The quality was exactly like the mockup — no surprises, no delays. My packaging looked so professional it sold the product before people even opened it."</p>
+          <p class="review-text">"The quality was exactly like the mockup â no surprises, no delays. My packaging looked so professional it sold the product before people even opened it."</p>
           <div class="review-author">Marcus T. @ Elevated Goods</div>
         </div>
         <div class="review-card">
-          <div class="review-stars">★★★★★</div>
+          <div class="review-stars">âââââ</div>
           <div class="review-title">Fast &amp; Efficient</div>
           <p class="review-text">"I use them for my freeze dried candy brand and the bags literally sell themselves. Customers ask where I get my packaging from every single time."</p>
           <div class="review-author">Destiny R. @ Sweet Lab Co.</div>
         </div>
         <div class="review-card">
-          <div class="review-stars">★★★★★</div>
+          <div class="review-stars">âââââ</div>
           <div class="review-title">They made it easy.</div>
           <p class="review-text">"Switched from another supplier and never looked back. Faster turnaround, better quality, and they actually communicate with you throughout the process."</p>
           <div class="review-author">Tanya M. @ Pure Origins</div>
         </div>
         <div class="review-card">
-          <div class="review-stars">★★★★★</div>
+          <div class="review-stars">âââââ</div>
           <div class="review-title">No better company.</div>
           <p class="review-text">"They helped me design the whole thing from scratch. The process was super easy, and I got my boxes shipped within 2 weeks. Wouldn't go anywhere else."</p>
           <div class="review-author">Stephanie @ CBD Health Living</div>
         </div>
         <div class="review-card">
-          <div class="review-stars">★★★★★</div>
+          <div class="review-stars">âââââ</div>
           <div class="review-title">Real deal packaging.</div>
-          <p class="review-text">"These guys know their stuff inside and out — materials, finishes, print processes. They guided me to exactly the right product for my brand and budget."</p>
+          <p class="review-text">"These guys know their stuff inside and out â materials, finishes, print processes. They guided me to exactly the right product for my brand and budget."</p>
           <div class="review-author">Scotty @ Galaxy BonBons</div>
         </div>
         <div class="review-card">
-          <div class="review-stars">★★★★★</div>
+          <div class="review-stars">âââââ</div>
           <div class="review-title">Boxes &amp; Bags Bundled.</div>
           <p class="review-text">"Templates ready to go, design team on standby, and everything ships together. Graphics and Packaging makes it easy to get everything done right."</p>
           <div class="review-author">Katie @ Infused Fusion</div>
@@ -1003,19 +1003,19 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
       <div class="faq-list" id="faqHome">
         <div class="faq-item">
           <div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">We design &amp; print.</span><span class="faq-icon">+</span></div>
-          <div class="faq-a"><div class="faq-a-inner">Our graphic designers create artwork with the final product in mind — proper sizing, custom templates, and print files. We work closely with production to make sure your bags look exactly right.</div></div>
+          <div class="faq-a"><div class="faq-a-inner">Our graphic designers create artwork with the final product in mind â proper sizing, custom templates, and print files. We work closely with production to make sure your bags look exactly right.</div></div>
         </div>
         <div class="faq-item">
           <div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">We keep small businesses in mind.</span><span class="faq-icon">+</span></div>
           <div class="faq-a"><div class="faq-a-inner">Low minimums, flexible quantities, and pricing that scales with you. Whether you're ordering 300 bags or 10,000, we make sure you're getting the best value at every level.</div></div>
         </div>
         <div class="faq-item">
-          <div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">We ship worldwide — for free.</span><span class="faq-icon">+</span></div>
-          <div class="faq-a"><div class="faq-a-inner">All orders ship free worldwide. No surprise fees at checkout — the price you see is the price you pay, delivered to your door no matter where you are.</div></div>
+          <div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">We ship worldwide â for free.</span><span class="faq-icon">+</span></div>
+          <div class="faq-a"><div class="faq-a-inner">All orders ship free worldwide. No surprise fees at checkout â the price you see is the price you pay, delivered to your door no matter where you are.</div></div>
         </div>
         <div class="faq-item">
           <div class="faq-q" onclick="toggleFaq(this)"><span class="faq-q-text">Packaging &amp; production experts.</span><span class="faq-icon">+</span></div>
-          <div class="faq-a"><div class="faq-a-inner">We know materials, finishes, and print processes inside and out. We'll guide you to the right product for your brand and budget — so you don't have to figure it out alone.</div></div>
+          <div class="faq-a"><div class="faq-a-inner">We know materials, finishes, and print processes inside and out. We'll guide you to the right product for your brand and budget â so you don't have to figure it out alone.</div></div>
         </div>
       </div>
     </div>
@@ -1029,12 +1029,12 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
     <div class="container">
       <div class="label">Custom Direct Print</div>
       <h1>Custom Printed Mylar Bags</h1>
-      <p>7 business days to print, 3–5 days for shipping.</p>
+      <p>7 business days to print, 3â5 days for shipping.</p>
       <ul class="bags-bullets">
         <li>Unlimited colors, edge to edge high definition print</li>
         <li>Low MOQs with bulk pricing and large volume price breaks</li>
         <li>All finishes, add-ons and embellishments available</li>
-        <li>All-inclusive pricing — free shipping worldwide with every order</li>
+        <li>All-inclusive pricing â free shipping worldwide with every order</li>
       </ul>
       <div class="bags-hero-btns">
         <button class="btn btn-gold" onclick="showPage('templates')">Need Templates?</button>
@@ -1044,22 +1044,22 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
       <!-- Size Guide -->
       <div class="size-guide" onclick="toggleSizeGuide()">
         <div class="size-guide-header">
-          <div class="size-guide-title">📏 &nbsp;Size Guide — Not sure which size? Click to compare all options.</div>
+          <div class="size-guide-title">ð &nbsp;Size Guide â Not sure which size? Click to compare all options.</div>
           <span id="sgArrow" style="color:var(--gold);font-size:18px">+</span>
         </div>
         <div class="size-guide-body" id="sizeGuideBody">
           <table class="size-table">
             <thead><tr><th>Size</th><th>Style</th><th>Best For</th><th>MOQ</th><th>Starting Price</th></tr></thead>
             <tbody>
-              <tr><td>3×3"</td><td>Flat Pouch</td><td>Samples, small portions, pre-rolls</td><td>500</td><td>$0.96/bag</td></tr>
-              <tr><td>3×5"</td><td>Flat Pouch</td><td>1g flower, gummies, small snacks</td><td>500</td><td>$1.00/bag</td></tr>
-              <tr><td>2×7"</td><td>Pre-Roll / Vape</td><td>Pre-rolls, vape carts, pens</td><td>500</td><td>$1.04/bag</td></tr>
-              <tr><td>4×5"</td><td>Stand-Up</td><td>3.5g flower, edibles, candy</td><td>500</td><td>$1.05/bag</td></tr>
-              <tr><td>4×6"</td><td>Stand-Up</td><td>7g flower, larger candy bags</td><td>500</td><td>$1.12/bag</td></tr>
-              <tr><td>5×7"</td><td>Stand-Up</td><td>14g / half oz flower, snack bags</td><td>300</td><td>$1.85/bag</td></tr>
-              <tr><td>5×8"</td><td>Stand-Up</td><td>28g / oz flower, large snacks</td><td>300</td><td>$1.94/bag</td></tr>
-              <tr><td>6×9"</td><td>Stand-Up</td><td>2oz+ flower, bulk candy</td><td>300</td><td>$1.99/bag</td></tr>
-              <tr><td>7×10"</td><td>Stand-Up</td><td>QP / large bulk, popcorn, trail mix</td><td>300</td><td>$2.18/bag</td></tr>
+              <tr><td>3Ã3"</td><td>Flat Pouch</td><td>Samples, small portions, pre-rolls</td><td>500</td><td>$0.96/bag</td></tr>
+              <tr><td>3Ã5"</td><td>Flat Pouch</td><td>1g flower, gummies, small snacks</td><td>500</td><td>$1.00/bag</td></tr>
+              <tr><td>2Ã7"</td><td>Pre-Roll / Vape</td><td>Pre-rolls, vape carts, pens</td><td>500</td><td>$1.04/bag</td></tr>
+              <tr><td>4Ã5"</td><td>Stand-Up</td><td>3.5g flower, edibles, candy</td><td>500</td><td>$1.05/bag</td></tr>
+              <tr><td>4Ã6"</td><td>Stand-Up</td><td>7g flower, larger candy bags</td><td>500</td><td>$1.12/bag</td></tr>
+              <tr><td>5Ã7"</td><td>Stand-Up</td><td>14g / half oz flower, snack bags</td><td>300</td><td>$1.85/bag</td></tr>
+              <tr><td>5Ã8"</td><td>Stand-Up</td><td>28g / oz flower, large snacks</td><td>300</td><td>$1.94/bag</td></tr>
+              <tr><td>6Ã9"</td><td>Stand-Up</td><td>2oz+ flower, bulk candy</td><td>300</td><td>$1.99/bag</td></tr>
+              <tr><td>7Ã10"</td><td>Stand-Up</td><td>QP / large bulk, popcorn, trail mix</td><td>300</td><td>$2.18/bag</td></tr>
             </tbody>
           </table>
         </div>
@@ -1074,15 +1074,15 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
       <p class="section-desc">Choose your size, configure your bag options and upload your design.</p>
       <div class="products-grid">
         <div class="product-card"><div class="product-img" style="padding:0"><img src="https://made2ordermerch.com/cdn/shop/files/Render_Mockup_3840_1728_2026-02-21_1_41a759b3-d27b-4a2b-92dd-039e8ad52af8.png?v=1771894699&width=600" style="width:100%;height:100%;object-fit:cover" alt="Custom Shaped Mylar Bags" loading="lazy"></div><div class="product-body"><div class="product-from">Starting at 500 bags @ $1.90/bag</div><div class="product-title">Custom Shaped Mylar Bags</div><button class="product-view btn-gold" onclick="showPage('quote')" style="background:linear-gradient(135deg,var(--gold),var(--orange));color:var(--black);border:none;border-radius:4px;padding:11px;width:100%;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:12px;letter-spacing:2px;text-transform:uppercase;cursor:pointer">Get a Quote</button></div></div>
-        <div class="product-card"><div class="product-img" style="padding:0"><img src="https://made2ordermerch.com/cdn/shop/files/Untitled_design_35_a542d982-1757-411a-a852-36e7d3c03051.png?v=1739382060&width=600" style="width:100%;height:100%;object-fit:cover" alt="3×3" Direct Print Mylar Bags" loading="lazy"></div><div class="product-body"><div class="product-from">Starting at 500 bags @ $0.96/bag</div><div class="product-title">3×3" Direct Print Mylar Bags</div><button class="product-view" onclick="showPage('pricing')">View Pricing</button></div></div>
-        <div class="product-card"><div class="product-img">🛍️</div><div class="product-body"><div class="product-from">Starting at 500 bags @ $1.00/bag</div><div class="product-title">3×5" Direct Print Mylar Bags</div><button class="product-view" onclick="showPage('pricing')">View Pricing</button></div></div>
-        <div class="product-card"><div class="product-img" style="padding:0"><img src="https://made2ordermerch.com/cdn/shop/files/2x7.png?v=1770755461&width=600" style="width:100%;height:100%;object-fit:cover" alt="2×7" Direct Print Mylar Bags" loading="lazy"></div><div class="product-body"><div class="product-from">Starting at 500 bags @ $1.04/bag</div><div class="product-title">2×7" Direct Print Mylar Bags</div><button class="product-view" onclick="showPage('pricing')">View Pricing</button></div></div>
-        <div class="product-card"><div class="product-img">🛍️</div><div class="product-body"><div class="product-from">Starting at 500 bags @ $1.05/bag</div><div class="product-title">4×5" Direct Print Mylar Bags</div><button class="product-view" onclick="showPage('pricing')">View Pricing</button></div></div>
-        <div class="product-card"><div class="product-img" style="padding:0"><img src="https://made2ordermerch.com/cdn/shop/files/4x6.webp?v=1771627625&width=600" style="width:100%;height:100%;object-fit:cover" alt="4×6" Direct Print Mylar Bags" loading="lazy"></div><div class="product-body"><div class="product-from">Starting at 500 bags @ $1.12/bag</div><div class="product-title">4×6" Direct Print Mylar Bags</div><button class="product-view" onclick="showPage('pricing')">View Pricing</button></div></div>
-        <div class="product-card"><div class="product-img">🛍️</div><div class="product-body"><div class="product-from">Starting at 300 bags @ $1.85/bag</div><div class="product-title">5×7" Direct Print Mylar Bags</div><button class="product-view" onclick="showPage('pricing')">View Pricing</button></div></div>
-        <div class="product-card"><div class="product-img" style="padding:0"><img src="https://made2ordermerch.com/cdn/shop/files/5x8_7cae3127-858e-4a00-8014-c77ecf4615a4.webp?v=1772413924&width=600" style="width:100%;height:100%;object-fit:cover" alt="5×8" Direct Print Mylar Bags" loading="lazy"></div><div class="product-body"><div class="product-from">Starting at 300 bags @ $1.94/bag</div><div class="product-title">5×8" Direct Print Mylar Bags</div><button class="product-view" onclick="showPage('pricing')">View Pricing</button></div></div>
-        <div class="product-card"><div class="product-img">🛍️</div><div class="product-body"><div class="product-from">Starting at 300 bags @ $1.99/bag</div><div class="product-title">6×9" Direct Print Mylar Bags</div><button class="product-view" onclick="showPage('pricing')">View Pricing</button></div></div>
-        <div class="product-card"><div class="product-img" style="padding:0"><img src="https://made2ordermerch.com/cdn/shop/files/Untitled_design_39.webp?v=1741979245&width=600" style="width:100%;height:100%;object-fit:cover" alt="7×10" Direct Print Mylar Bags" loading="lazy"></div><div class="product-body"><div class="product-from">Starting at 300 bags @ $2.18/bag</div><div class="product-title">7×10" Direct Print Mylar Bags</div><button class="product-view" onclick="showPage('pricing')">View Pricing</button></div></div>
+        <div class="product-card"><div class="product-img" style="padding:0"><img src="https://made2ordermerch.com/cdn/shop/files/Untitled_design_35_a542d982-1757-411a-a852-36e7d3c03051.png?v=1739382060&width=600" style="width:100%;height:100%;object-fit:cover" alt="3Ã3" Direct Print Mylar Bags" loading="lazy"></div><div class="product-body"><div class="product-from">Starting at 500 bags @ $0.96/bag</div><div class="product-title">3Ã3" Direct Print Mylar Bags</div><button class="product-view" onclick="showPage('pricing')">View Pricing</button></div></div>
+        <div class="product-card"><div class="product-img">ðï¸</div><div class="product-body"><div class="product-from">Starting at 500 bags @ $1.00/bag</div><div class="product-title">3Ã5" Direct Print Mylar Bags</div><button class="product-view" onclick="showPage('pricing')">View Pricing</button></div></div>
+        <div class="product-card"><div class="product-img" style="padding:0"><img src="https://made2ordermerch.com/cdn/shop/files/2x7.png?v=1770755461&width=600" style="width:100%;height:100%;object-fit:cover" alt="2Ã7" Direct Print Mylar Bags" loading="lazy"></div><div class="product-body"><div class="product-from">Starting at 500 bags @ $1.04/bag</div><div class="product-title">2Ã7" Direct Print Mylar Bags</div><button class="product-view" onclick="showPage('pricing')">View Pricing</button></div></div>
+        <div class="product-card"><div class="product-img">ðï¸</div><div class="product-body"><div class="product-from">Starting at 500 bags @ $1.05/bag</div><div class="product-title">4Ã5" Direct Print Mylar Bags</div><button class="product-view" onclick="showPage('pricing')">View Pricing</button></div></div>
+        <div class="product-card"><div class="product-img" style="padding:0"><img src="https://made2ordermerch.com/cdn/shop/files/4x6.webp?v=1771627625&width=600" style="width:100%;height:100%;object-fit:cover" alt="4Ã6" Direct Print Mylar Bags" loading="lazy"></div><div class="product-body"><div class="product-from">Starting at 500 bags @ $1.12/bag</div><div class="product-title">4Ã6" Direct Print Mylar Bags</div><button class="product-view" onclick="showPage('pricing')">View Pricing</button></div></div>
+        <div class="product-card"><div class="product-img">ðï¸</div><div class="product-body"><div class="product-from">Starting at 300 bags @ $1.85/bag</div><div class="product-title">5Ã7" Direct Print Mylar Bags</div><button class="product-view" onclick="showPage('pricing')">View Pricing</button></div></div>
+        <div class="product-card"><div class="product-img" style="padding:0"><img src="https://made2ordermerch.com/cdn/shop/files/5x8_7cae3127-858e-4a00-8014-c77ecf4615a4.webp?v=1772413924&width=600" style="width:100%;height:100%;object-fit:cover" alt="5Ã8" Direct Print Mylar Bags" loading="lazy"></div><div class="product-body"><div class="product-from">Starting at 300 bags @ $1.94/bag</div><div class="product-title">5Ã8" Direct Print Mylar Bags</div><button class="product-view" onclick="showPage('pricing')">View Pricing</button></div></div>
+        <div class="product-card"><div class="product-img">ðï¸</div><div class="product-body"><div class="product-from">Starting at 300 bags @ $1.99/bag</div><div class="product-title">6Ã9" Direct Print Mylar Bags</div><button class="product-view" onclick="showPage('pricing')">View Pricing</button></div></div>
+        <div class="product-card"><div class="product-img" style="padding:0"><img src="https://made2ordermerch.com/cdn/shop/files/Untitled_design_39.webp?v=1741979245&width=600" style="width:100%;height:100%;object-fit:cover" alt="7Ã10" Direct Print Mylar Bags" loading="lazy"></div><div class="product-body"><div class="product-from">Starting at 300 bags @ $2.18/bag</div><div class="product-title">7Ã10" Direct Print Mylar Bags</div><button class="product-view" onclick="showPage('pricing')">View Pricing</button></div></div>
       </div>
     </div>
   </section>
@@ -1094,15 +1094,15 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
     <div class="container">
       <div class="label">Custom Direct Print</div>
       <h1>Custom Printed Boxes</h1>
-      <p>7 business days to print, 3–5 days for shipping.</p>
+      <p>7 business days to print, 3â5 days for shipping.</p>
       <ul class="bags-bullets">
         <li>Folding boxes, retail-ready packaging and display boxes</li>
-        <li>Low minimums starting at 50–100 pieces</li>
+        <li>Low minimums starting at 50â100 pieces</li>
         <li>All finishes including Gloss, Matte, Holo, Soft Touch and UV Spot</li>
-        <li>All-inclusive pricing — free shipping worldwide</li>
+        <li>All-inclusive pricing â free shipping worldwide</li>
       </ul>
       <div class="bags-hero-btns">
-        <button class="btn btn-gold" onclick="showPage('quote')">Get a Quote →</button>
+        <button class="btn btn-gold" onclick="showPage('quote')">Get a Quote â</button>
         <button class="btn btn-outline" onclick="showPage('design')">Need a Design Made?</button>
       </div>
     </div>
@@ -1131,7 +1131,7 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
       <h1>Bags + Boxes Bundled</h1>
       <p>Get your bags and boxes together at the best combined price. Bundle deals for brands that need complete packaging solutions.</p>
       <div class="bags-hero-btns">
-        <button class="btn btn-gold" onclick="showPage('quote')">Request Bundle Quote →</button>
+        <button class="btn btn-gold" onclick="showPage('quote')">Request Bundle Quote â</button>
       </div>
     </div>
   </section>
@@ -1140,9 +1140,9 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
       <div class="label">Bundle Deals</div>
       <h2 class="section-title">Bundle <span>Options</span></h2>
       <div class="products-grid">
-        <div class="product-card"><div class="product-img" style="padding:0"><img src="https://made2ordermerch.com/cdn/shop/files/Untitled_design_93_6d9ef2a0-04c9-4d06-9d17-493f24250e97.png?v=1771463123&width=600" style="width:100%;height:100%;object-fit:cover" alt="Bundle" loading="lazy"></div><div class="product-body"><div class="product-from">Bags + Boxes</div><div class="product-title">Starter Bundle</div><p style="color:var(--gray);font-size:13px;margin-bottom:16px">300 bags + 100 boxes — perfect for launching your brand.</p><button class="product-view" onclick="showPage('quote')">Get a Quote</button></div></div>
-        <div class="product-card"><div class="product-img" style="padding:0"><img src="https://made2ordermerch.com/cdn/shop/files/Untitled_design_93_6d9ef2a0-04c9-4d06-9d17-493f24250e97.png?v=1771463123&width=600" style="width:100%;height:100%;object-fit:cover" alt="Bundle" loading="lazy"></div><div class="product-body"><div class="product-from">Bags + Boxes + Labels</div><div class="product-title">Brand Bundle</div><p style="color:var(--gray);font-size:13px;margin-bottom:16px">500 bags + 200 boxes + custom sticker labels — full brand kit.</p><button class="product-view" onclick="showPage('quote')">Get a Quote</button></div></div>
-        <div class="product-card"><div class="product-img" style="padding:0"><img src="https://made2ordermerch.com/cdn/shop/files/Untitled_design_93_6d9ef2a0-04c9-4d06-9d17-493f24250e97.png?v=1771463123&width=600" style="width:100%;height:100%;object-fit:cover" alt="Bundle" loading="lazy"></div><div class="product-body"><div class="product-from">Multiple SKUs</div><div class="product-title">Multi-Strain Bundle</div><p style="color:var(--gray);font-size:13px;margin-bottom:16px">Multiple design variations — great for cannabis and candy brands with several products.</p><button class="product-view" onclick="showPage('quote')">Get a Quote</button></div></div>
+        <div class="product-card"><div class="product-img" style="padding:0"><img src="https://made2ordermerch.com/cdn/shop/files/Untitled_design_93_6d9ef2a0-04c9-4d06-9d17-493f24250e97.png?v=1771463123&width=600" style="width:100%;height:100%;object-fit:cover" alt="Bundle" loading="lazy"></div><div class="product-body"><div class="product-from">Bags + Boxes</div><div class="product-title">Starter Bundle</div><p style="color:var(--gray);font-size:13px;margin-bottom:16px">300 bags + 100 boxes â perfect for launching your brand.</p><button class="product-view" onclick="showPage('quote')">Get a Quote</button></div></div>
+        <div class="product-card"><div class="product-img" style="padding:0"><img src="https://made2ordermerch.com/cdn/shop/files/Untitled_design_93_6d9ef2a0-04c9-4d06-9d17-493f24250e97.png?v=1771463123&width=600" style="width:100%;height:100%;object-fit:cover" alt="Bundle" loading="lazy"></div><div class="product-body"><div class="product-from">Bags + Boxes + Labels</div><div class="product-title">Brand Bundle</div><p style="color:var(--gray);font-size:13px;margin-bottom:16px">500 bags + 200 boxes + custom sticker labels â full brand kit.</p><button class="product-view" onclick="showPage('quote')">Get a Quote</button></div></div>
+        <div class="product-card"><div class="product-img" style="padding:0"><img src="https://made2ordermerch.com/cdn/shop/files/Untitled_design_93_6d9ef2a0-04c9-4d06-9d17-493f24250e97.png?v=1771463123&width=600" style="width:100%;height:100%;object-fit:cover" alt="Bundle" loading="lazy"></div><div class="product-body"><div class="product-from">Multiple SKUs</div><div class="product-title">Multi-Strain Bundle</div><p style="color:var(--gray);font-size:13px;margin-bottom:16px">Multiple design variations â great for cannabis and candy brands with several products.</p><button class="product-view" onclick="showPage('quote')">Get a Quote</button></div></div>
       </div>
     </div>
   </section>
@@ -1155,7 +1155,7 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
       <div class="label">All-Inclusive Pricing</div>
       <h1>Bulk Pricing</h1>
       <p style="color:var(--gray);font-size:16px;margin-bottom:20px">All prices include worldwide shipping, full-color direct print, and your choice of finish. Click any size for bulk pricing.</p>
-      <div class="pricing-include">✦ &nbsp;Pricing Includes Worldwide Shipping + Full Color Print + Finish of Choice</div>
+      <div class="pricing-include">â¦ &nbsp;Pricing Includes Worldwide Shipping + Full Color Print + Finish of Choice</div>
     </div>
   </section>
 
@@ -1175,7 +1175,7 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
           <!-- DATA: same prices as made2ordermerch -->
           <div class="ptable-size-row" id="ps-3x3">
             <div class="ptable-size-trigger" onclick="togglePSize('ps-3x3')">
-              <div class="ptable-size-name">🛍️ 3×3" Mylar Bags <span class="ptable-size-sub">Flat Pouch · MOQ 500</span></div>
+              <div class="ptable-size-name">ðï¸ 3Ã3" Mylar Bags <span class="ptable-size-sub">Flat Pouch Â· MOQ 500</span></div>
               <div class="ptable-size-meta">Starting at $0.96/bag &nbsp;<span id="ps-3x3-arrow">+</span></div>
             </div>
             <div class="ptable-rows" id="ps-3x3-rows">
@@ -1190,7 +1190,7 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
 
           <div class="ptable-size-row" id="ps-3x5">
             <div class="ptable-size-trigger" onclick="togglePSize('ps-3x5')">
-              <div class="ptable-size-name">🛍️ 3×5" Mylar Bags <span class="ptable-size-sub">Flat Pouch · MOQ 500</span></div>
+              <div class="ptable-size-name">ðï¸ 3Ã5" Mylar Bags <span class="ptable-size-sub">Flat Pouch Â· MOQ 500</span></div>
               <div class="ptable-size-meta">Starting at $1.00/bag &nbsp;<span id="ps-3x5-arrow">+</span></div>
             </div>
             <div class="ptable-rows" id="ps-3x5-rows">
@@ -1205,7 +1205,7 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
 
           <div class="ptable-size-row" id="ps-2x7">
             <div class="ptable-size-trigger" onclick="togglePSize('ps-2x7')">
-              <div class="ptable-size-name">🛍️ 2×7" Mylar Bags <span class="ptable-size-sub">Pre-Roll/Vape · MOQ 500</span></div>
+              <div class="ptable-size-name">ðï¸ 2Ã7" Mylar Bags <span class="ptable-size-sub">Pre-Roll/Vape Â· MOQ 500</span></div>
               <div class="ptable-size-meta">Starting at $1.04/bag &nbsp;<span id="ps-2x7-arrow">+</span></div>
             </div>
             <div class="ptable-rows" id="ps-2x7-rows">
@@ -1219,7 +1219,7 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
 
           <div class="ptable-size-row" id="ps-4x5">
             <div class="ptable-size-trigger" onclick="togglePSize('ps-4x5')">
-              <div class="ptable-size-name">🛍️ 4×5" Mylar Bags <span class="ptable-size-sub">Stand-Up · MOQ 500</span></div>
+              <div class="ptable-size-name">ðï¸ 4Ã5" Mylar Bags <span class="ptable-size-sub">Stand-Up Â· MOQ 500</span></div>
               <div class="ptable-size-meta">Starting at $1.05/bag &nbsp;<span id="ps-4x5-arrow">+</span></div>
             </div>
             <div class="ptable-rows" id="ps-4x5-rows">
@@ -1234,7 +1234,7 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
 
           <div class="ptable-size-row" id="ps-5x7">
             <div class="ptable-size-trigger" onclick="togglePSize('ps-5x7')">
-              <div class="ptable-size-name">🛍️ 5×7" Mylar Bags <span class="ptable-size-sub">Stand-Up · MOQ 300</span></div>
+              <div class="ptable-size-name">ðï¸ 5Ã7" Mylar Bags <span class="ptable-size-sub">Stand-Up Â· MOQ 300</span></div>
               <div class="ptable-size-meta">Starting at $1.85/bag &nbsp;<span id="ps-5x7-arrow">+</span></div>
             </div>
             <div class="ptable-rows" id="ps-5x7-rows">
@@ -1248,7 +1248,7 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
 
           <div class="ptable-size-row" id="ps-6x9">
             <div class="ptable-size-trigger" onclick="togglePSize('ps-6x9')">
-              <div class="ptable-size-name">🛍️ 6×9" Mylar Bags <span class="ptable-size-sub">Stand-Up · MOQ 300</span></div>
+              <div class="ptable-size-name">ðï¸ 6Ã9" Mylar Bags <span class="ptable-size-sub">Stand-Up Â· MOQ 300</span></div>
               <div class="ptable-size-meta">Starting at $1.99/bag &nbsp;<span id="ps-6x9-arrow">+</span></div>
             </div>
             <div class="ptable-rows" id="ps-6x9-rows">
@@ -1262,7 +1262,7 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
 
           <div class="ptable-size-row" id="ps-7x10">
             <div class="ptable-size-trigger" onclick="togglePSize('ps-7x10')">
-              <div class="ptable-size-name">🛍️ 7×10" Mylar Bags <span class="ptable-size-sub">Stand-Up · MOQ 300</span></div>
+              <div class="ptable-size-name">ðï¸ 7Ã10" Mylar Bags <span class="ptable-size-sub">Stand-Up Â· MOQ 300</span></div>
               <div class="ptable-size-meta">Starting at $2.18/bag &nbsp;<span id="ps-7x10-arrow">+</span></div>
             </div>
             <div class="ptable-rows" id="ps-7x10-rows">
@@ -1274,15 +1274,15 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
           </div>
 
         </div><!-- end ptable-wrap -->
-        <p style="color:var(--gray);font-size:13px;text-align:center">* All prices include worldwide shipping. <a onclick="showPage('quote')" style="color:var(--gold);cursor:pointer">Need a custom quote? →</a></p>
+        <p style="color:var(--gray);font-size:13px;text-align:center">* All prices include worldwide shipping. <a onclick="showPage('quote')" style="color:var(--gold);cursor:pointer">Need a custom quote? â</a></p>
       </div><!-- end ptab-mylar -->
 
       <div id="ptab-boxes" style="display:none">
         <div class="ptable-wrap" style="padding:52px;text-align:center">
-          <div style="font-size:52px;margin-bottom:16px">📦</div>
+          <div style="font-size:52px;margin-bottom:16px">ð¦</div>
           <h3 style="font-family:'Bebas Neue',sans-serif;font-size:32px;letter-spacing:1px;margin-bottom:12px">Box Pricing</h3>
           <p style="color:var(--gray);font-size:15px;max-width:440px;margin:0 auto 32px">Box pricing varies by dimensions, material, and quantity. Submit your project details and we'll get back within 24 hours with pricing.</p>
-          <button class="btn btn-gold" onclick="showPage('quote')">Get a Box Quote →</button>
+          <button class="btn btn-gold" onclick="showPage('quote')">Get a Box Quote â</button>
         </div>
       </div>
 
@@ -1301,7 +1301,7 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
         <li>Custom built dielines &amp; full design creation</li>
         <li>Print-ready artwork with production files (CMYK)</li>
         <li>Technical packaging and structural design expertise</li>
-        <li>Unlimited minor revisions — we design till we get it right</li>
+        <li>Unlimited minor revisions â we design till we get it right</li>
       </ul>
     </div>
   </section>
@@ -1353,14 +1353,14 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
       <div class="design-order-inner">
         <div class="design-order-info">
           <h2>Design Creation</h2>
-          <p>Tell us what you need and our designers will bring your packaging vision to life — from concept to print-ready files.</p>
+          <p>Tell us what you need and our designers will bring your packaging vision to life â from concept to print-ready files.</p>
           <div class="design-price">$150</div>
-          <div class="design-price-label">per design project · unlimited minor revisions</div>
+          <div class="design-price-label">per design project Â· unlimited minor revisions</div>
           <ul style="list-style:none">
-            <li style="color:var(--lgray);font-size:14px;padding:6px 0;display:flex;gap:8px"><span style="color:var(--gold)">✦</span> Bag, Box, Jar, Label, Card, T-Shirt &amp; more</li>
-            <li style="color:var(--lgray);font-size:14px;padding:6px 0;display:flex;gap:8px"><span style="color:var(--gold)">✦</span> Print-ready CMYK production files</li>
-            <li style="color:var(--lgray);font-size:14px;padding:6px 0;display:flex;gap:8px"><span style="color:var(--gold)">✦</span> 1st draft within 2 business days</li>
-            <li style="color:var(--lgray);font-size:14px;padding:6px 0;display:flex;gap:8px"><span style="color:var(--gold)">✦</span> Unlimited minor revisions included</li>
+            <li style="color:var(--lgray);font-size:14px;padding:6px 0;display:flex;gap:8px"><span style="color:var(--gold)">â¦</span> Bag, Box, Jar, Label, Card, T-Shirt &amp; more</li>
+            <li style="color:var(--lgray);font-size:14px;padding:6px 0;display:flex;gap:8px"><span style="color:var(--gold)">â¦</span> Print-ready CMYK production files</li>
+            <li style="color:var(--lgray);font-size:14px;padding:6px 0;display:flex;gap:8px"><span style="color:var(--gold)">â¦</span> 1st draft within 2 business days</li>
+            <li style="color:var(--lgray);font-size:14px;padding:6px 0;display:flex;gap:8px"><span style="color:var(--gold)">â¦</span> Unlimited minor revisions included</li>
           </ul>
         </div>
         <div class="design-form-side">
@@ -1384,8 +1384,8 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
           </div>
           <div class="form-group"><label>Your Name</label><input type="text" placeholder="Your name"></div>
           <div class="form-group"><label>Email</label><input type="email" placeholder="mrgraphicsandpackaging@gmail.com"></div>
-          <div class="form-group"><label>Design Details</label><textarea placeholder="Describe your vision — colors, style, references, brand name..."></textarea></div>
-          <button class="btn btn-gold" style="width:100%;justify-content:center" onclick="submitDesignOrder()">Submit Order →</button>
+          <div class="form-group"><label>Design Details</label><textarea placeholder="Describe your vision â colors, style, references, brand name..."></textarea></div>
+          <button class="btn btn-gold" style="width:100%;justify-content:center" onclick="submitDesignOrder()">Submit Order â</button>
         </div>
       </div>
     </div>
@@ -1422,21 +1422,21 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
             <select><option>Gloss</option><option>Matte</option><option>Holographic</option><option>Soft Touch</option><option>UV Spot</option><option>UV Holo</option><option>Not sure</option></select>
           </div>
           <div class="form-group"><label>Turnaround Needed</label>
-            <select><option>Standard (7 business days)</option><option>Rush (contact us)</option><option>Flexible</option></select>
+            <select><option>Standard (14 business days)</option><option>Rush (contact us)</option><option>Flexible</option></select>
           </div>
           <div class="form-group full"><label>Any other details!</label><textarea placeholder="Colors, references, special requirements, questions..."></textarea></div>
           <div class="form-group full">
             <label>Upload Reference Image / Design</label>
             <div class="file-drop" onclick="this.querySelector('input').click()">
               <input type="file" style="display:none" accept=".jpg,.png,.gif,.svg,.psd,.ai,.pdf">
-              <div class="file-drop-icon">📎</div>
+              <div class="file-drop-icon">ð</div>
               <div class="file-drop-text">Choose file or drag here</div>
-              <div class="file-drop-hint">Supported: JPG, PNG, GIF, SVG, PSD, AI, PDF — max 32MB</div>
+              <div class="file-drop-hint">Supported: JPG, PNG, GIF, SVG, PSD, AI, PDF â max 32MB</div>
             </div>
           </div>
           <div class="full">
-            <button class="btn btn-gold" style="width:100%;justify-content:center;padding:16px" onclick="alert('Thank you! Your quote request has been received. We will respond within 24 hours.\n\nEmail: mrgraphicsandpackaging@gmail.com\nInstagram: @graphicsandpackaging')">Submit Details →</button>
-            <p style="color:var(--gray);font-size:12px;text-align:center;margin-top:12px">Response within <strong style="color:var(--gold)">24 hours</strong> — includes pricing &amp; your custom template.</p>
+            <button class="btn btn-gold" style="width:100%;justify-content:center;padding:16px" onclick="alert('Thank you! Your quote request has been received. We will respond within 24 hours.\n\nEmail: mrgraphicsandpackaging@gmail.com\nInstagram: @graphicsandpackaging')">Submit Details â</button>
+            <p style="color:var(--gray);font-size:12px;text-align:center;margin-top:12px">Response within <strong style="color:var(--gold)">24 hours</strong> â includes pricing &amp; your custom template.</p>
           </div>
         </div>
       </div>
@@ -1450,7 +1450,7 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
     <div class="container">
       <div class="label">Returning Customer</div>
       <h1>Reorder Your Packaging</h1>
-      <p>Already ordered with us? Reordering is fast and easy — we keep your files on file for quick reorders.</p>
+      <p>Already ordered with us? Reordering is fast and easy â we keep your files on file for quick reorders.</p>
     </div>
   </section>
   <section class="quote-section">
@@ -1464,7 +1464,7 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
         <div class="form-group"><label>Product to Reorder *</label><input type="text" placeholder="e.g. 4x5 Mylar Bags, Gloss finish"></div>
         <div class="form-group"><label>Quantity *</label><input type="text" placeholder="e.g. 500"></div>
         <div class="form-group"><label>Any changes from last order?</label><textarea placeholder="Same design / updated design / color changes..."></textarea></div>
-        <button class="btn btn-gold" style="width:100%;justify-content:center;padding:16px;margin-top:8px" onclick="alert('Reorder submitted! We will contact you within 24 hours.\n\nEmail: mrgraphicsandpackaging@gmail.com')">Submit Reorder →</button>
+        <button class="btn btn-gold" style="width:100%;justify-content:center;padding:16px;margin-top:8px" onclick="alert('Reorder submitted! We will contact you within 24 hours.\n\nEmail: mrgraphicsandpackaging@gmail.com')">Submit Reorder â</button>
       </div>
     </div>
   </section>
@@ -1485,15 +1485,15 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
       <h2 class="section-title">Download Your <span>Template</span></h2>
       <p class="section-desc">Templates are available in AI, PSD, and PDF formats. Need a custom template for an unlisted size? <a onclick="showPage('quote')" style="color:var(--gold);cursor:pointer">Contact us.</a></p>
       <div class="templates-grid">
-        <div class="template-card"><div class="template-icon">📄</div><div class="template-title">3×3" Flat Pouch</div><p class="template-desc">Template for 3×3" flat mylar bags. Includes bleed and safe zone guides.</p><div class="template-dl">⬇ Download Template</div></div>
-        <div class="template-card"><div class="template-icon">📄</div><div class="template-title">3×5" Flat Pouch</div><p class="template-desc">Template for 3×5" flat mylar bags.</p><div class="template-dl">⬇ Download Template</div></div>
-        <div class="template-card"><div class="template-icon">📄</div><div class="template-title">2×7" Pre-Roll</div><p class="template-desc">Template for 2×7" pre-roll / vape pouches.</p><div class="template-dl">⬇ Download Template</div></div>
-        <div class="template-card"><div class="template-icon">📄</div><div class="template-title">4×5" Stand-Up</div><p class="template-desc">Template for 4×5" stand-up mylar bags.</p><div class="template-dl">⬇ Download Template</div></div>
-        <div class="template-card"><div class="template-icon">📄</div><div class="template-title">5×7" Stand-Up</div><p class="template-desc">Template for 5×7" stand-up mylar bags.</p><div class="template-dl">⬇ Download Template</div></div>
-        <div class="template-card"><div class="template-icon">📄</div><div class="template-title">6×9" Stand-Up</div><p class="template-desc">Template for 6×9" stand-up mylar bags.</p><div class="template-dl">⬇ Download Template</div></div>
-        <div class="template-card"><div class="template-icon">📄</div><div class="template-title">7×10" Stand-Up</div><p class="template-desc">Template for 7×10" stand-up mylar bags.</p><div class="template-dl">⬇ Download Template</div></div>
-        <div class="template-card"><div class="template-icon">📄</div><div class="template-title">Custom Box</div><p class="template-desc">Folding box dieline template. Contact us for custom dimensions.</p><div class="template-dl">⬇ Download Template</div></div>
-        <div class="template-card" onclick="showPage('design')" style="background:rgba(245,166,35,0.05);border-color:var(--gold-border)"><div class="template-icon">🎨</div><div class="template-title">Need a Custom Template?</div><p class="template-desc">Don't see the size you need? Our design team can create a custom dieline for any product.</p><div class="template-dl" style="color:var(--sky)">→ Hire Us to Design</div></div>
+        <div class="template-card"><div class="template-icon">ð</div><div class="template-title">3Ã3" Flat Pouch</div><p class="template-desc">Template for 3Ã3" flat mylar bags. Includes bleed and safe zone guides.</p><div class="template-dl">â¬ Download Template</div></div>
+        <div class="template-card"><div class="template-icon">ð</div><div class="template-title">3Ã5" Flat Pouch</div><p class="template-desc">Template for 3Ã5" flat mylar bags.</p><div class="template-dl">â¬ Download Template</div></div>
+        <div class="template-card"><div class="template-icon">ð</div><div class="template-title">2Ã7" Pre-Roll</div><p class="template-desc">Template for 2Ã7" pre-roll / vape pouches.</p><div class="template-dl">â¬ Download Template</div></div>
+        <div class="template-card"><div class="template-icon">ð</div><div class="template-title">4Ã5" Stand-Up</div><p class="template-desc">Template for 4Ã5" stand-up mylar bags.</p><div class="template-dl">â¬ Download Template</div></div>
+        <div class="template-card"><div class="template-icon">ð</div><div class="template-title">5Ã7" Stand-Up</div><p class="template-desc">Template for 5Ã7" stand-up mylar bags.</p><div class="template-dl">â¬ Download Template</div></div>
+        <div class="template-card"><div class="template-icon">ð</div><div class="template-title">6Ã9" Stand-Up</div><p class="template-desc">Template for 6Ã9" stand-up mylar bags.</p><div class="template-dl">â¬ Download Template</div></div>
+        <div class="template-card"><div class="template-icon">ð</div><div class="template-title">7Ã10" Stand-Up</div><p class="template-desc">Template for 7Ã10" stand-up mylar bags.</p><div class="template-dl">â¬ Download Template</div></div>
+        <div class="template-card"><div class="template-icon">ð</div><div class="template-title">Custom Box</div><p class="template-desc">Folding box dieline template. Contact us for custom dimensions.</p><div class="template-dl">â¬ Download Template</div></div>
+        <div class="template-card" onclick="showPage('design')" style="background:rgba(245,166,35,0.05);border-color:var(--gold-border)"><div class="template-icon">ð¨</div><div class="template-title">Need a Custom Template?</div><p class="template-desc">Don't see the size you need? Our design team can create a custom dieline for any product.</p><div class="template-dl" style="color:var(--sky)">â Hire Us to Design</div></div>
       </div>
     </div>
   </section>
@@ -1505,9 +1505,9 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
     <div class="container">
       <div class="label">Learn</div>
       <h1>Custom Mylar Bag Guide</h1>
-      <p>Everything you need to know about custom mylar bags — styles, sizes, finishes, and costs explained.</p>
+      <p>Everything you need to know about custom mylar bags â styles, sizes, finishes, and costs explained.</p>
       <div style="display:flex;gap:12px;flex-wrap:wrap">
-        <button class="btn btn-gold" onclick="showPage('bags')">Shop Bags →</button>
+        <button class="btn btn-gold" onclick="showPage('bags')">Shop Bags â</button>
         <button class="btn btn-outline" onclick="showPage('quote')">Get a Quote</button>
       </div>
     </div>
@@ -1517,14 +1517,14 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
       <div class="learn-grid">
         <div class="learn-body">
           <h2>What Are Mylar Bags?</h2>
-          <p>Mylar bags are flexible packaging made from a polyester film (BoPET) known for its exceptional barrier properties. They protect contents from moisture, oxygen, light, and odors — making them ideal for cannabis, edibles, freeze dried candy, snacks, supplements, and more.</p>
-          <p>At Graphics &amp; Packaging, we offer direct print mylar bags — meaning your design is printed directly onto the bag material for vibrant, full-color, edge-to-edge results with no sticker labels needed.</p>
+          <p>Mylar bags are flexible packaging made from a polyester film (BoPET) known for its exceptional barrier properties. They protect contents from moisture, oxygen, light, and odors â making them ideal for cannabis, edibles, freeze dried candy, snacks, supplements, and more.</p>
+          <p>At Graphics &amp; Packaging, we offer direct print mylar bags â meaning your design is printed directly onto the bag material for vibrant, full-color, edge-to-edge results with no sticker labels needed.</p>
 
           <h2>Styles &amp; Sizes</h2>
-          <p>We offer two main bag styles: <strong>flat pouches</strong> and <strong>stand-up pouches</strong>. Flat pouches are great for smaller quantities and slim products like pre-rolls. Stand-up pouches (also called stand-up bags or zip pouches) have a bottom gusset and resealable zipper — perfect for flower, candy, and snacks.</p>
+          <p>We offer two main bag styles: <strong>flat pouches</strong> and <strong>stand-up pouches</strong>. Flat pouches are great for smaller quantities and slim products like pre-rolls. Stand-up pouches (also called stand-up bags or zip pouches) have a bottom gusset and resealable zipper â perfect for flower, candy, and snacks.</p>
           <div class="info-box">
             <div class="info-box-title">Available Sizes</div>
-            <p>3×3" · 3×5" · 2×7" (pre-roll) · 4×5" · 4×6" · 5×7" · 5×8" · 6×9" · 7×10" · Custom Shaped</p>
+            <p>3Ã3" Â· 3Ã5" Â· 2Ã7" (pre-roll) Â· 4Ã5" Â· 4Ã6" Â· 5Ã7" Â· 5Ã8" Â· 6Ã9" Â· 7Ã10" Â· Custom Shaped</p>
           </div>
 
           <h2>Finishes Available</h2>
@@ -1538,17 +1538,17 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
           </div>
 
           <h2>Minimum Order &amp; Pricing</h2>
-          <p>Our minimum order quantities start at just 300–500 pieces depending on the bag size. Pricing scales with volume — the more you order, the lower the per-unit cost. All pricing includes worldwide free shipping and full-color direct print.</p>
-          <button class="btn btn-gold" onclick="showPage('pricing')">View Full Pricing →</button>
+          <p>Our minimum order quantities start at just 300â500 pieces depending on the bag size. Pricing scales with volume â the more you order, the lower the per-unit cost. All pricing includes worldwide shipping and full-color direct print.</p>
+          <button class="btn btn-gold" onclick="showPage('pricing')">View Full Pricing â</button>
         </div>
         <div class="learn-sidebar">
           <div class="learn-sidebar-card">
             <h4>Quick Links</h4>
-            <a onclick="showPage('bags')">Shop All Bags →</a>
-            <a onclick="showPage('pricing')">View Pricing →</a>
-            <a onclick="showPage('templates')">Download Templates →</a>
-            <a onclick="showPage('design')">Design Services →</a>
-            <a onclick="showPage('quote')">Get a Quote →</a>
+            <a onclick="showPage('bags')">Shop All Bags â</a>
+            <a onclick="showPage('pricing')">View Pricing â</a>
+            <a onclick="showPage('templates')">Download Templates â</a>
+            <a onclick="showPage('design')">Design Services â</a>
+            <a onclick="showPage('quote')">Get a Quote â</a>
           </div>
           <div class="learn-sidebar-card" style="background:rgba(245,166,35,0.06);border-color:var(--gold-border)">
             <h4>Need Help Choosing?</h4>
@@ -1575,24 +1575,24 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
         <div class="learn-body">
           <h2>What is Digital Printing?</h2>
           <p>Digital printing uses inkjet or laser technology to print directly onto the bag material. It's fast, flexible, and great for low to medium quantities. No plates or setup fees means you can print multiple designs in one order affordably.</p>
-          <div class="info-box"><div class="info-box-title">Best for</div><p>Orders of 300–5,000 bags · Multiple designs · Fast turnaround · New brands testing designs</p></div>
+          <div class="info-box"><div class="info-box-title">Best for</div><p>Orders of 300â5,000 bags Â· Multiple designs Â· Fast turnaround Â· New brands testing designs</p></div>
 
           <h2>What is Gravure Printing?</h2>
           <p>Rotogravure (gravure) printing uses engraved cylinders to transfer ink onto the bag film. It produces extremely consistent, high-resolution results and is the standard for large production runs. Setup costs are higher due to the plate/cylinder creation.</p>
-          <div class="info-box" style="background:rgba(48,197,255,0.06);border-color:rgba(48,197,255,0.2)"><div class="info-box-title" style="color:var(--sky)">Best for</div><p>Orders of 10,000+ bags · Single consistent design · Maximum color accuracy</p></div>
+          <div class="info-box" style="background:rgba(48,197,255,0.06);border-color:rgba(48,197,255,0.2)"><div class="info-box-title" style="color:var(--sky)">Best for</div><p>Orders of 10,000+ bags Â· Single consistent design Â· Maximum color accuracy</p></div>
 
           <h2>Which Should You Choose?</h2>
           <p>For most small and medium businesses, <strong>digital printing</strong> is the right choice. You get great quality, fast turnaround, low minimums, and the flexibility to update your design. Gravure makes more sense at very high volumes where per-unit cost savings outweigh the setup costs.</p>
-          <p>At Graphics &amp; Packaging, we use high-quality digital printing for all our direct print bags — giving you excellent results at accessible minimums.</p>
-          <button class="btn btn-gold" onclick="showPage('bags')" style="margin-top:8px">Shop Our Bags →</button>
+          <p>At Graphics &amp; Packaging, we use high-quality digital printing for all our direct print bags â giving you excellent results at accessible minimums.</p>
+          <button class="btn btn-gold" onclick="showPage('bags')" style="margin-top:8px">Shop Our Bags â</button>
         </div>
         <div class="learn-sidebar">
           <div class="learn-sidebar-card">
             <h4>Learn More</h4>
-            <a onclick="showPage('guide-mylar')">Custom Mylar Bag Guide →</a>
-            <a onclick="showPage('guide-finish')">How to Choose a Finish →</a>
-            <a onclick="showPage('guide-candy')">Candy Packaging Guide →</a>
-            <a onclick="showPage('guide-moq')">Low MOQ Guide →</a>
+            <a onclick="showPage('guide-mylar')">Custom Mylar Bag Guide â</a>
+            <a onclick="showPage('guide-finish')">How to Choose a Finish â</a>
+            <a onclick="showPage('guide-candy')">Candy Packaging Guide â</a>
+            <a onclick="showPage('guide-moq')">Low MOQ Guide â</a>
           </div>
         </div>
       </div>
@@ -1614,27 +1614,27 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
         <div class="learn-body">
           <h2>Why Packaging Matters for Freeze Dried Candy</h2>
           <p>Freeze dried candy is highly moisture-sensitive. The right packaging keeps your product crunchy and fresh, protects it from humidity, and gives your brand a professional shelf presence that commands premium pricing.</p>
-          <p>Mylar bags are the #1 choice for freeze dried candy brands because of their superior barrier properties — blocking moisture, oxygen, and light better than any standard plastic bag.</p>
+          <p>Mylar bags are the #1 choice for freeze dried candy brands because of their superior barrier properties â blocking moisture, oxygen, and light better than any standard plastic bag.</p>
           <h2>Best Bag Sizes for Candy</h2>
           <ul>
-            <li><strong>3×5" flat pouch</strong> — single-serving snack bags</li>
-            <li><strong>4×5" or 4×6" stand-up</strong> — 2–3oz candy bags, most popular size</li>
-            <li><strong>5×7" stand-up</strong> — 4–6oz bags, great for premium candy brands</li>
-            <li><strong>6×9" stand-up</strong> — 8oz+ bulk bags</li>
+            <li><strong>3Ã5" flat pouch</strong> â single-serving snack bags</li>
+            <li><strong>4Ã5" or 4Ã6" stand-up</strong> â 2â3oz candy bags, most popular size</li>
+            <li><strong>5Ã7" stand-up</strong> â 4â6oz bags, great for premium candy brands</li>
+            <li><strong>6Ã9" stand-up</strong> â 8oz+ bulk bags</li>
           </ul>
           <h2>Design Tips for Candy Packaging</h2>
-          <p>Bright, bold colors sell candy. Don't be afraid to go loud with your design — vibrant imagery, eye-catching fonts, and playful characters all help your product fly off shelves. Our design team specializes in candy branding.</p>
+          <p>Bright, bold colors sell candy. Don't be afraid to go loud with your design â vibrant imagery, eye-catching fonts, and playful characters all help your product fly off shelves. Our design team specializes in candy branding.</p>
           <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px">
-            <button class="btn btn-gold" onclick="showPage('bags')">Shop Candy Bags →</button>
+            <button class="btn btn-gold" onclick="showPage('bags')">Shop Candy Bags â</button>
             <button class="btn btn-outline" onclick="showPage('design')">Get a Design Made</button>
           </div>
         </div>
         <div class="learn-sidebar">
           <div class="learn-sidebar-card">
             <h4>Popular Candy Sizes</h4>
-            <a onclick="showPage('bags')">4×5" Stand-Up → from $1.05/bag</a>
-            <a onclick="showPage('bags')">5×7" Stand-Up → from $1.85/bag</a>
-            <a onclick="showPage('bags')">6×9" Stand-Up → from $1.99/bag</a>
+            <a onclick="showPage('bags')">4Ã5" Stand-Up â from $1.05/bag</a>
+            <a onclick="showPage('bags')">5Ã7" Stand-Up â from $1.85/bag</a>
+            <a onclick="showPage('bags')">6Ã9" Stand-Up â from $1.99/bag</a>
           </div>
         </div>
       </div>
@@ -1647,7 +1647,7 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
     <div class="container">
       <div class="label">Learn</div>
       <h1>Low MOQ Custom Packaging Guide</h1>
-      <p>Why low minimum order quantities matter — and how to take advantage of them to grow your brand.</p>
+      <p>Why low minimum order quantities matter â and how to take advantage of them to grow your brand.</p>
     </div>
   </section>
   <section class="learn-content">
@@ -1655,9 +1655,9 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
       <div class="learn-grid">
         <div class="learn-body">
           <h2>What is MOQ?</h2>
-          <p>MOQ stands for Minimum Order Quantity — the smallest number of units you can order in a single run. Traditional packaging manufacturers require 1,000–10,000 units minimum, which creates a huge barrier for small businesses and startups.</p>
+          <p>MOQ stands for Minimum Order Quantity â the smallest number of units you can order in a single run. Traditional packaging manufacturers require 1,000â10,000 units minimum, which creates a huge barrier for small businesses and startups.</p>
           <h2>Our MOQs</h2>
-          <div class="info-box"><div class="info-box-title">Graphics &amp; Packaging MOQs</div><p>Mylar Bags (small): 500 pieces · Mylar Bags (large): 300 pieces · Boxes: 50–100 pieces · Bundles: from 300 bags</p></div>
+          <div class="info-box"><div class="info-box-title">Graphics &amp; Packaging MOQs</div><p>Mylar Bags (small): 500 pieces Â· Mylar Bags (large): 300 pieces Â· Boxes: 50â100 pieces Â· Bundles: from 300 bags</p></div>
           <h2>Why Low MOQ Is a Game Changer</h2>
           <ul>
             <li>Test new designs without committing to large quantities</li>
@@ -1666,15 +1666,15 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
             <li>Offer multiple SKU variations without huge inventory</li>
           </ul>
           <h2>Bulk Pricing Still Available</h2>
-          <p>Even with low MOQs, our pricing scales significantly at higher quantities. Order 5,000+ bags and the per-unit price drops dramatically. You get the best of both worlds — flexibility at low volumes, and savings at high volumes.</p>
-          <button class="btn btn-gold" onclick="showPage('pricing')" style="margin-top:8px">View Full Pricing →</button>
+          <p>Even with low MOQs, our pricing scales significantly at higher quantities. Order 5,000+ bags and the per-unit price drops dramatically. You get the best of both worlds â flexibility at low volumes, and savings at high volumes.</p>
+          <button class="btn btn-gold" onclick="showPage('pricing')" style="margin-top:8px">View Full Pricing â</button>
         </div>
         <div class="learn-sidebar">
           <div class="learn-sidebar-card">
             <h4>Start Small, Scale Big</h4>
-            <a onclick="showPage('quote')">Get a Custom Quote →</a>
-            <a onclick="showPage('bags')">Shop All Bag Sizes →</a>
-            <a onclick="showPage('pricing')">View Pricing Table →</a>
+            <a onclick="showPage('quote')">Get a Custom Quote â</a>
+            <a onclick="showPage('bags')">Shop All Bag Sizes â</a>
+            <a onclick="showPage('pricing')">View Pricing Table â</a>
           </div>
         </div>
       </div>
@@ -1687,7 +1687,7 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
     <div class="container">
       <div class="label">Learn</div>
       <h1>How to Choose Your Finish</h1>
-      <p>A complete guide to mylar bag finishes — gloss, matte, holo, soft touch, UV spot and UV holo explained.</p>
+      <p>A complete guide to mylar bag finishes â gloss, matte, holo, soft touch, UV spot and UV holo explained.</p>
     </div>
   </section>
   <section class="learn-content">
@@ -1697,23 +1697,23 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
           <h2>Why Finish Matters</h2>
           <p>The finish on your mylar bag is one of the most important brand decisions you'll make. It affects how the bag feels in a customer's hand, how colors look under store lighting, and the overall premium perception of your product.</p>
           <div class="finish-grid">
-            <div class="finish-card"><div class="finish-card-name">Gloss ✦ Most Popular</div><p class="finish-card-desc">Shiny, reflective, vibrant. Makes colors pop and images look vivid. The go-to choice for bold, colorful designs.</p></div>
+            <div class="finish-card"><div class="finish-card-name">Gloss â¦ Most Popular</div><p class="finish-card-desc">Shiny, reflective, vibrant. Makes colors pop and images look vivid. The go-to choice for bold, colorful designs.</p></div>
             <div class="finish-card"><div class="finish-card-name">Matte</div><p class="finish-card-desc">Flat, smooth, premium. Colors appear softer and more sophisticated. Works beautifully with minimal designs and dark backgrounds.</p></div>
-            <div class="finish-card"><div class="finish-card-name">Holographic</div><p class="finish-card-desc">Shifts color with the light — rainbow iridescent effect across the whole bag. Extremely eye-catching, great for candy and premium cannabis.</p></div>
-            <div class="finish-card"><div class="finish-card-name">Soft Touch</div><p class="finish-card-desc">Feels like velvet. Creates an unforgettable tactile experience. High-end brands love soft touch — customers can't put it down.</p></div>
+            <div class="finish-card"><div class="finish-card-name">Holographic</div><p class="finish-card-desc">Shifts color with the light â rainbow iridescent effect across the whole bag. Extremely eye-catching, great for candy and premium cannabis.</p></div>
+            <div class="finish-card"><div class="finish-card-name">Soft Touch</div><p class="finish-card-desc">Feels like velvet. Creates an unforgettable tactile experience. High-end brands love soft touch â customers can't put it down.</p></div>
             <div class="finish-card"><div class="finish-card-name">UV Spot</div><p class="finish-card-desc">Selective gloss applied to specific elements of your design (logos, text, graphics). Creates depth and contrast against a matte base.</p></div>
             <div class="finish-card"><div class="finish-card-name">UV Holo</div><p class="finish-card-desc">Holographic foil applied selectively to design elements. The ultimate premium finish for luxury packaging.</p></div>
           </div>
           <h2>Not Sure Which to Pick?</h2>
           <p>Our team will help you choose the right finish for your brand. Send us a message on Instagram or email us and we'll give you a recommendation based on your design and target market.</p>
-          <button class="btn btn-gold" onclick="openContact()" style="margin-top:8px">Ask Us →</button>
+          <button class="btn btn-gold" onclick="openContact()" style="margin-top:8px">Ask Us â</button>
         </div>
         <div class="learn-sidebar">
           <div class="learn-sidebar-card">
             <h4>By Finish Type</h4>
-            <a onclick="showPage('pricing')">View Finish Pricing →</a>
-            <a onclick="showPage('guide-mylar')">Full Mylar Bag Guide →</a>
-            <a onclick="showPage('quote')">Order Samples →</a>
+            <a onclick="showPage('pricing')">View Finish Pricing â</a>
+            <a onclick="showPage('guide-mylar')">Full Mylar Bag Guide â</a>
+            <a onclick="showPage('quote')">Order Samples â</a>
           </div>
         </div>
       </div>
@@ -1730,10 +1730,10 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
           <img src="logogp.png" alt="Graphics and Packaging">
           <div class="footer-brand-logo-text">Graphics &amp;<br><span>Packaging</span></div>
         </div>
-        <p class="footer-tagline">Custom direct print Mylar bags, candy packaging, product boxes, and complete brand packaging solutions. Low minimums — free worldwide shipping — 7 business day turnaround.</p>
+        <p class="footer-tagline">Custom direct print Mylar bags, candy packaging, product boxes, and complete brand packaging solutions. Low minimums â free worldwide shipping â 7 business day turnaround.</p>
         <div class="footer-socials">
           <a href="https://www.instagram.com/graphicsandpackaging" target="_blank" class="fsoc">IG</a>
-          <a href="mailto:mrgraphicsandpackaging@gmail.com" class="fsoc">✉</a>
+          <a href="mailto:mrgraphicsandpackaging@gmail.com" class="fsoc">â</a>
         </div>
       </div>
       <div class="footer-col">
@@ -1755,14 +1755,14 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
       <div>
         <h4 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:18px">Contact Us!</h4>
         <div class="footer-contact">
-          <div class="footer-contact-item"><div class="fci-icon">📸</div><div class="fci-text">Instagram: <a href="https://www.instagram.com/graphicsandpackaging" target="_blank">@graphicsandpackaging</a></div></div>
-          <div class="footer-contact-item"><div class="fci-icon">✉️</div><div class="fci-text">Email: <a href="mailto:mrgraphicsandpackaging@gmail.com">mrgraphicsandpackaging@gmail.com</a></div></div>
-          <div class="footer-contact-item"><div class="fci-icon">🌐</div><div class="fci-text"><a href="https://graphicsandpackaging.com">graphicsandpackaging.com</a></div></div>
+          <div class="footer-contact-item"><div class="fci-icon">ð¸</div><div class="fci-text">Instagram: <a href="https://www.instagram.com/graphicsandpackaging" target="_blank">@graphicsandpackaging</a></div></div>
+          <div class="footer-contact-item"><div class="fci-icon">âï¸</div><div class="fci-text">Email: <a href="mailto:mrgraphicsandpackaging@gmail.com">mrgraphicsandpackaging@gmail.com</a></div></div>
+          <div class="footer-contact-item"><div class="fci-icon">ð</div><div class="fci-text"><a href="https://graphicsandpackaging.com">graphicsandpackaging.com</a></div></div>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 Graphics &amp; Packaging — <a onclick="showPage('home')">graphicsandpackaging.com</a></p>
+      <p>Â© 2026 Graphics &amp; Packaging â <a onclick="showPage('home')">graphicsandpackaging.com</a></p>
       <div style="display:flex;gap:20px">
         <a onclick="showPage('quote')" style="color:var(--gray);font-size:12px;cursor:pointer">FAQ</a>
         <a style="color:var(--gray);font-size:12px">Privacy Policy</a>
@@ -1773,28 +1773,28 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
 </footer>
 
 <!-- ============================================================ CONTACT FLOAT BTN -->
-<button class="contact-float" onclick="openContact()">GET IN TOUCH ✦</button>
+<button class="contact-float" onclick="openContact()">GET IN TOUCH â¦</button>
 
 <!-- ============================================================ CONTACT PANEL -->
 <div class="contact-panel-overlay" id="cpOverlay" onclick="closeContact()"></div>
 <div class="contact-panel" id="cpPanel">
-  <div class="cp-close" onclick="closeContact()">✕</div>
+  <div class="cp-close" onclick="closeContact()">â</div>
   <div class="cp-title">Get In Touch</div>
   <div class="cp-sub">Let's talk packaging. Reach us any way you like.</div>
 
   <a href="https://www.instagram.com/graphicsandpackaging" target="_blank" class="cp-btn">
-    <div class="cp-btn-icon">📸</div>
+    <div class="cp-btn-icon">ð¸</div>
     <div><div class="cp-btn-text-main white">DM ON INSTAGRAM</div><div class="cp-btn-text-sub wg">@graphicsandpackaging</div></div>
   </a>
   <a href="mailto:mrgraphicsandpackaging@gmail.com" class="cp-btn cp-btn-gold">
-    <div class="cp-btn-icon">✉️</div>
+    <div class="cp-btn-icon">âï¸</div>
     <div><div class="cp-btn-text-main">EMAIL US</div><div class="cp-btn-text-sub">mrgraphicsandpackaging@gmail.com</div></div>
   </a>
   <div class="cp-btn" onclick="showPage('quote');closeContact()" style="cursor:pointer">
-    <div class="cp-btn-icon">📋</div>
+    <div class="cp-btn-icon">ð</div>
     <div><div class="cp-btn-text-main white">SUBMIT A QUOTE</div><div class="cp-btn-text-sub wg">Response within 24 hours</div></div>
   </div>
-  <div class="cp-hours">MON–SAT, 9AM–7PM EST</div>
+  <div class="cp-hours">MONâSAT, 9AMâ7PM EST</div>
 </div>
 
 <!-- ============================================================ JS -->
@@ -1836,7 +1836,7 @@ function togglePSize(id) {
   const rows = document.getElementById(id + '-rows');
   const arrow = document.getElementById(id + '-arrow');
   const isOpen = rows.classList.toggle('open');
-  if (arrow) arrow.textContent = isOpen ? '−' : '+';
+  if (arrow) arrow.textContent = isOpen ? 'â' : '+';
 }
 
 // Pricing tab switch
@@ -1852,7 +1852,7 @@ function toggleSizeGuide() {
   const body = document.getElementById('sizeGuideBody');
   const arrow = document.getElementById('sgArrow');
   const open = body.classList.toggle('open');
-  if (arrow) arrow.textContent = open ? '−' : '+';
+  if (arrow) arrow.textContent = open ? 'â' : '+';
 }
 
 // Contact panel
