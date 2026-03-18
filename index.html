@@ -674,7 +674,7 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
   .nav-links.mobile-open{display:block !important;position:fixed;top:60px;left:0;width:100%;background:#000 !important;z-index:8999;max-height:calc(100vh - 60px);overflow-y:auto;padding-bottom:24px;border-bottom:1px solid rgba(245,166,35,0.25)}
   .nav-links.mobile-open .nav-item{display:block !important;border-bottom:1px solid rgba(255,255,255,0.06)}
   .nav-links.mobile-open .nav-item > a,.nav-links.mobile-open .nav-item > button.nav-btn{display:block !important;width:100%;text-align:left;padding:14px 20px !important;color:var(--lgray)}
-  .nav-links.mobile-open .dropdown{position:static !important;opacity:1 !important;pointer-events:auto !important;transform:none !important;box-shadow:none !important;background:rgba(245,166,35,0.05) !important;border-radius:0 !important;border:none !important;min-width:0}
+  .nav-links.mobile-open .dropdown{position:static !important;opacity:1 !important;pointer-events:auto !important;display:block !important}.nav-links.mobile-open .dropdown-content,.nav-links.mobile-open .nav-dropdown-content{display:none !important}.nav-links.mobile-open .dropdown.open .dropdown-content,.nav-links.mobile-open .dropdown.open .nav-dropdown-content{display:block !important}
   .nav-links.mobile-open .dropdown a{padding:10px 32px !important;font-size:12px !important}
   .hero-content{grid-template-columns:1fr;text-align:center}
   .hero-right{order:-1}
@@ -692,6 +692,19 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
   .contact-panel{width:100%;border-radius:16px 16px 0 0}
   section{padding:70px 0}
 }
+
+.design-cards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:30px 0}
+.design-svc-card{background:#111;border:1px solid rgba(255,255,255,0.08);border-radius:12px;overflow:hidden;transition:border-color .2s}
+.design-svc-card:hover{border-color:var(--gold)}
+.design-svc-img{height:160px;overflow:hidden;background:#1a1a1a}
+.design-svc-img img{width:100%;height:100%;object-fit:cover}
+.design-svc-body{padding:16px}
+.design-svc-name{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;text-transform:uppercase;color:#fff;margin-bottom:4px}
+.design-svc-desc{font-size:12px;color:rgba(255,255,255,0.5);margin-bottom:10px;line-height:1.4}
+.design-svc-price{font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:800;color:var(--gold)}
+.design-svc-btn{background:var(--gold);color:#000;border:none;padding:8px 16px;border-radius:6px;font-weight:700;font-size:12px;cursor:pointer;text-transform:uppercase;letter-spacing:1px}
+@media(max-width:768px){.design-cards-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:420px){.design-cards-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -1478,7 +1491,56 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
       <div class="gallery-item"><img src="https://made2ordermerch.com/cdn/shop/files/Screenshot_2026-02-24_at_11.00.40_AM.png?v=1771948854&width=600" alt="Design work" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:8px"></div>
       <div class="gallery-item"><img src="https://made2ordermerch.com/cdn/shop/files/Screenshot_2026-02-24_at_10.58.53_AM_1.png?v=1771948747&width=600" alt="Design work" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:8px"></div>
       <div class="gallery-item"><img src="https://made2ordermerch.com/cdn/shop/files/Screenshot_2026-02-24_at_10.59.52_AM.png?v=1771948806&width=600" alt="Design work" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:8px"></div>
-      <div class="gallery-item"><img src="https://made2ordermerch.com/cdn/shop/files/Screenshot_2026-02-24_at_10.56.51_AM.png?v=1771948632&width=600" alt="Design work" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:8px"></div>
+      <div class="gallery-item"><img src="https://made2ordermerch.com/cdn/shop/files/Screenshot_2026-02-24_at_10.56.51_AM.png?v<div class="design-cards-grid"><div class="design-svc-card">
+      <div class="design-svc-img"><img src="https://made2ordermerch.com/cdn/shop/files/Untitled_design_35_a542d982-1757-411a-a852-36e7d3c03051.png" alt="Mylar Bag Design" loading="lazy" onerror="this.parentElement.style.background='#1a1a1a'"></div>
+      <div class="design-svc-body">
+        <div class="design-svc-name">Mylar Bag Design</div>
+        <div class="design-svc-desc">Flat pouches, stand-up bags, pre-roll tubes — all sizes</div>
+        <div class="design-svc-price">$150</div>
+        <button class="design-svc-btn" onclick="showPage('design')"style="margin-top:10px">Order Now</button>
+      </div>
+    </div><div class="design-svc-card">
+      <div class="design-svc-img"><img src="https://made2ordermerch.com/cdn/shop/files/Untitled_design_39.webp" alt="Box Design" loading="lazy" onerror="this.parentElement.style.background='#1a1a1a'"></div>
+      <div class="design-svc-body">
+        <div class="design-svc-name">Box Design</div>
+        <div class="design-svc-desc">Folding boxes, tuck tops, display and rigid gift boxes</div>
+        <div class="design-svc-price">$150</div>
+        <button class="design-svc-btn" onclick="showPage('design')"style="margin-top:10px">Order Now</button>
+      </div>
+    </div><div class="design-svc-card">
+      <div class="design-svc-img"><img src="https://made2ordermerch.com/cdn/shop/files/2x7.png" alt="Label / Sticker" loading="lazy" onerror="this.parentElement.style.background='#1a1a1a'"></div>
+      <div class="design-svc-body">
+        <div class="design-svc-name">Label / Sticker</div>
+        <div class="design-svc-desc">Product labels, round stickers, sheet labels</div>
+        <div class="design-svc-price">$75</div>
+        <button class="design-svc-btn" onclick="showPage('design')"style="margin-top:10px">Order Now</button>
+      </div>
+    </div><div class="design-svc-card">
+      <div class="design-svc-img"><img src="https://made2ordermerch.com/cdn/shop/files/Render_Mockup_3840_1728_2026-02-21_1_41a759b3-d27b-4a2b-92dd-039e8ad52af8.png" alt="Logo Design" loading="lazy" onerror="this.parentElement.style.background='#1a1a1a'"></div>
+      <div class="design-svc-body">
+        <div class="design-svc-name">Logo Design</div>
+        <div class="design-svc-desc">Brand logo with full source files included</div>
+        <div class="design-svc-price">$150</div>
+        <button class="design-svc-btn" onclick="showPage('design')"style="margin-top:10px">Order Now</button>
+      </div>
+    </div><div class="design-svc-card">
+      <div class="design-svc-img"><img src="https://made2ordermerch.com/cdn/shop/files/5x8_7cae3127-858e-4a00-8014-c77ecf4615a4.webp" alt="Bundle (Bag + Box)" loading="lazy" onerror="this.parentElement.style.background='#1a1a1a'"></div>
+      <div class="design-svc-body">
+        <div class="design-svc-name">Bundle (Bag + Box)</div>
+        <div class="design-svc-desc">Matching bag and box design — save $50 vs separate</div>
+        <div class="design-svc-price">$250</div>
+        <button class="design-svc-btn" onclick="showPage('design')"style="margin-top:10px">Order Now</button>
+      </div>
+    </div><div class="design-svc-card">
+      <div class="design-svc-img"><img src="https://made2ordermerch.com/cdn/shop/files/Untitled_design_35_a542d982-1757-411a-a852-36e7d3c03051.png" alt="T-Shirt / Apparel" loading="lazy" onerror="this.parentElement.style.background='#1a1a1a'"></div>
+      <div class="design-svc-body">
+        <div class="design-svc-name">T-Shirt / Apparel</div>
+        <div class="design-svc-desc">Front/back print-ready apparel artwork</div>
+        <div class="design-svc-price">$100</div>
+        <button class="design-svc-btn" onclick="showPage('design')"style="margin-top:10px">Order Now</button>
+      </div>
+    </div></div>
+    =1771948632&width=600" alt="Design work" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:8px"></div>
       <div class="gallery-item"><img src="https://made2ordermerch.com/cdn/shop/files/IMG_3917.jpg?v=1771462654&width=600" alt="Design work" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:8px"></div>
       <div class="gallery-item"><img src="https://made2ordermerch.com/cdn/shop/files/IMG_3915.jpg?v=1751500126&width=600" alt="Design work" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:8px"></div>
       <div class="gallery-item"><img src="https://made2ordermerch.com/cdn/shop/files/Screenshot_2026-02-18_at_8.00.18_PM.png?v=1771462838&width=600" alt="Design work" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:8px"></div>
@@ -1965,6 +2027,7 @@ footer{display:block !important;background:#050505;border-top:1px solid var(--bo
 <script>
 // PAGE ROUTER
 function showPage(id) {
+  var _nl=document.querySelector('.nav-links'),_hb=document.querySelector('.hamburger');if(_nl)_nl.classList.remove('mobile-open');if(_hb)_hb.classList.remove('active');
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   const pg = document.getElementById('page-' + id);
   if (pg) {
@@ -2030,6 +2093,7 @@ function closeContact() {
 }
 
 // Mobile menu
+function toggleMobileDropdown(el){var d=el.closest('.dropdown');if(d)d.classList.toggle('open');}
 function toggleMobileMenu(){var l=document.getElementById('navLinks');if(!l)return;if(l.classList.contains('mobile-open')){closeMobileMenu();}else{l.classList.add('mobile-open');l.querySelectorAll('.dropdown,.nav-item').forEach(function(d){d.removeAttribute('style');});}}
 
 function checkMobile() {
